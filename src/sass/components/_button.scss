@@ -1,6 +1,106 @@
 .modal__btn{
     min-width: 160px;
+    min-height: 44px;
+
+    font-family: inherit;
     @include font();
+   
     border: none;
     border-radius: 22px;
+    cursor: pointer;
+
+    color: #D41443;
+    background-color: #ffffff;
+
+    transition: background-color 250ms linear;
+
+    &:hover,
+    &:focus{
+        background-color: #ECEBEB;
+    }
 }
+
+.modal__btn_dark{
+    color:#ffffff;
+    background-color: #D41342;
+}
+
+// MODAL BUTTON MOBILE OPEN BURGER
+// .modal__btn{
+//     min-width: 209px;
+// }
+
+// TABLET burger open btn
+// .modal__btn{
+//     min-width:186px;
+// }
+
+// TABLET header btn (buy now)/ DESKTOP
+// .modal__btn (такие же параметры как у основной кнопки)
+
+// MODAL BUTTON HEADER MOBILE эти две кнопки по параметрам такие же и на планшетной версии
+// 1 button products
+// .button{
+//    min-height: 24px; 
+//    @include font($fw: 400, $fs: 8px, $lh: 10px);
+//     border-radius: 20px;
+// }
+//    .button_dark-theme{
+//     min-width: 64px;
+// 
+//     background-color: #D41443;
+//     color:#ffffff;
+//    }
+// 2 button How it's made?
+//     .button_light-theme{
+//        min-width: 84px;
+       
+//        background-color: #ffffff;
+//        color:#D41443;
+// }
+// MODAL BUTTON HEADER DESKTOP
+// .button {
+//    min-height: 40px;
+//    @include font($fw: 400, $fs: 14px, $lh: 18px);
+//     border-radius: 20px;
+// }
+//  .button_dark-theme {
+//     min-width: 108px;
+//  }
+// 2 button How it's made?
+ //     .button_light-theme{
+//        min-width: 138px;
+//  }
+
+// ABOUT (HOW IT'S MADE?) MOBILE в планшетной и десктопной версиит такая же как и в мобильной
+// .modal__btn_about{
+//     min-width: 176px;
+
+//     @include font($fs: 14px, $lh: 18px);
+// }
+
+// CONTACTS MOBILE
+// button location
+// .modal__btn_contacts{
+//     min-width: 162px;
+// }
+// 2 button franchise
+// .modal__btn (такие же параметры как у основной кнопки)
+
+// contacts TABLET  
+// button location
+// .modal__btn_contacts {
+//     min-width: 192px;
+// }
+// .modal__btn_contacts-light{
+//     min-width:174px;
+// }
+
+// DESKTOP CONTACTS
+// button location
+// .modal__btn_contacts {
+//     min-width: 198px;
+// }
+// .modal__btn_contacts-light{
+//     min-width: 168px;
+// }
