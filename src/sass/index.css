@@ -1,4 +1,39 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
 @font-face {
   font-family: "Titan One";
   font-style: normal;
@@ -106,4 +141,14 @@
 
 .section_no-padding-bottom {
   padding-bottom: 0px;
+}
+
+.modal__btn {
+  min-width: 160px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.04em;
+  border: none;
+  border-radius: 22px;
 }/*# sourceMappingURL=index.css.map */
