@@ -1,0 +1,85 @@
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #FFF5F6;
+}
+.slogan-block {
+    display: flex;
+    width: 234px;
+}
+.slogan-block__text-1 {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFA5BA;
+}
+.slogan-block__text-2 {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 39px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    color: #D41443;
+}
+.contacts-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contacts-phone {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 186%;
+    text-align: right;
+    color: #000000;
+}
+
+.contacts-phone__number {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 186%;
+    /* or 22px */
+    text-align: right;
+    color: rgba(212, 20, 67, 1)
+}
+.copyright-block__text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 152%;
+    text-align: center;
+    color: #907E82;
+}
+.copyright-block {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #E1E1E1;
+}
+/*--подчеркивание  и подсвечивание текущей страницы--*/
+/* .bottom-border::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    padding-bottom: 0px;
+    bottom: -61px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--accent-color);
+}
+*/
