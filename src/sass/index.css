@@ -53,4 +53,25 @@
     padding-left: 16px;
     padding-right: 16px;
   }
+}
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section_no-padding-top {
+  padding-top: 0px;
+}
+
+.section_no-padding-bottom {
+  padding-bottom: 0px;
+}
+
+.section__title {
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 66px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }/*# sourceMappingURL=index.css.map */
