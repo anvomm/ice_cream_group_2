@@ -2,12 +2,8 @@
     min-width: 160px;
     min-height: 44px;
 
-    font-family: inherit;
     @include font();
-   
-    border: none;
     border-radius: 22px;
-    cursor: pointer;
 
     color: #D41443;
     background-color: #ffffff;
