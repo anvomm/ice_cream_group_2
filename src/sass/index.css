@@ -1,3 +1,6 @@
+/*<<<<<<< HEAD*/
+@charset "UTF-8";
+@import '~node_modules/modern-normalize/modern-normalize.css';
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 h1,
@@ -35,6 +38,7 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
+/* >>>>>>> main */
 @font-face {
   font-family: "Titan One";
   font-style: normal;
@@ -62,6 +66,107 @@ body {
   font-weight: 700;
   src: url("../fonts/dm-sans-v11-latin-700.eot");
   src: local(""), url("../fonts/dm-sans-v11-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/dm-sans-v11-latin-700.woff2") format("woff2"), url("../fonts/dm-sans-v11-latin-700.woff") format("woff"), url("../fonts/dm-sans-v11-latin-700.ttf") format("truetype"), url("../fonts/dm-sans-v11-latin-700.svg#DMSans") format("svg");
+}
+/* <<<<<<< HEAD */
+.contacts-block__social-media {
+  display: flex;
+  gap: 28px;
+}
+
+.social-media__item {
+  display: flex;
+}
+
+.social-media__link {
+  text-decoration: none;
+}
+
+.social-media__icon {
+  width: 32px;
+  height: 32px;
+}
+
+/*
+.social-icons-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-icons-list__item {
+    display: flex;
+    width: 32px;
+    height: 32px;
+}
+
+.social-icons-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--top-color);
+    border-radius: 50%; */
+/*  Задаём значения перехода  */
+/*     transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.soc-med-icon {
+    fill: var(--our-client-border-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .social-icons-list__link:hover &,
+    .social-icons-list__link:focus & {
+        fill: var(--top-color);
+    }
+}
+
+.social-icons-list__item {
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+} */
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #FFF5F6;
+}
+
+.slogan-block {
+  display: flex;
+  width: 234px;
+}
+
+.slogan-block__text-1 {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFA5BA;
+}
+
+.slogan-block__text-2 {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
 }
 .container {
   width: 100%;
@@ -104,6 +209,64 @@ body {
   text-transform: uppercase;
   color: #D41443;
 }
+
+/* <<<<<<< HEAD */
+.contacts-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contacts-phone {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+  text-align: right;
+  color: #000000;
+}
+
+.contacts-phone__number {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+  /* or 22px */
+  text-align: right;
+  color: rgb(212, 20, 67);
+}
+
+.copyright-block__text {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+  text-align: center;
+  color: #907E82;
+}
+
+.copyright-block {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #E1E1E1;
+}
+
+/*--подчеркивание  и подсвечивание текущей страницы--*/
+/* .bottom-border::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    padding-bottom: 0px;
+    bottom: -61px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--accent-color);
+}
+*//*# sourceMappingURL=index.css.map */
 
 .section__suptitle {
   font-family: "Titan One";
@@ -153,4 +316,5 @@ body {
   border: none;
   border-radius: 22px;
 }/*# sourceMappingURL=index.css.map */
+
 
