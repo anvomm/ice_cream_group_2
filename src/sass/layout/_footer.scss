@@ -2,14 +2,17 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 320px;
+    min-width: 320px;
     padding-left: 20px;
     padding-right: 20px;
     background: #FFF5F6;
 }
 .slogan-block {
     display: flex;
+    flex-direction: column;
     width: 234px;
+    gap: 16px;
+    margin-bottom: 40px;
 }
 .slogan-block__text-1 {
     font-family: 'Titan One';
@@ -28,13 +31,14 @@
     line-height: 39px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    
     color: #D41443;
 }
 .contacts-block {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
+    gap: 40px;
+    margin-bottom: 40px;
 }
 .contacts-phone {
     font-family: 'DM Sans';
@@ -64,22 +68,87 @@
     line-height: 152%;
     text-align: center;
     color: #907E82;
+    width: 135px;
 }
 .copyright-block {
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 3px;
     border-top-style: solid;
     border-top-width: 1px;
     border-top-color: #E1E1E1;
+    margin-left: -20px;
+    margin-right: -20px;
 }
-/*--подчеркивание  и подсвечивание текущей страницы--*/
-/* .bottom-border::before {
-    content: "";
-    position: absolute;
-    display: block;
-    left: 0;
-    padding-bottom: 0px;
-    bottom: -61px;
-    width: 100%;
-    height: 1px;
-    background-color: var(--accent-color);
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .footer__container {
+        width: 100%;
+    }
 }
-*/
+
+@media screen and (min-width: 768px) {
+    .footer__container {
+        width: 100%;
+    }
+    .footer__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .slogan-block {
+        width: 350px;
+        gap: 12px;
+        /* margin-bottom: 40px; */
+    }
+    .slogan-block__text-1 {
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .slogan-block__text-2 {
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 55px;
+    }
+    .contacts-block {
+        margin-bottom: 0px;
+    }
+    .copyright-block {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .copyright-block__text {
+        width: 400px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .slogan-block {
+        width: 480px;
+        gap: 16px;
+        margin-bottom: 60px;
+    }
+    .slogan-block__text-1 {
+        font-size: 30px;
+        line-height: 34px;
+    }
+    
+    .slogan-block__text-2 {
+        font-size: 58px;
+        line-height: 66px;
+    }
+    .contacts-block {
+        margin-bottom: 40px;
+    }
+    .copyright-block {
+        padding-top: 7px;
+        padding-bottom: 4px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
