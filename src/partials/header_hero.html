@@ -6,18 +6,31 @@
     ></a>
     <nav class="header__nav">
       <ul class="nav-menu">
-        <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">About us</a></li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">How it’s made?</a>
+        <li class="nav-menu__item">
+          <a class="nav-menu__link nav-menu__link--active" href="#">Home</a>
         </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Our products</a>
+        <li class="nav-menu__item">
+          <a class="nav-menu__link" href="#">About us</a>
         </li>
-        <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+        <li class="nav-menu__item">
+          <a class="nav-menu__link" href="#">How it’s made?</a>
+        </li>
+        <li class="nav-menu__item">
+          <a class="nav-menu__link" href="#">Our products</a>
+        </li>
+        <li class="nav-menu__item">
+          <a class="nav-menu__link" href="#">Contact</a>
+        </li>
       </ul>
     </nav>
-    <button class="header__btn">Buy now</button>
+    <div class="header-btn__wrap">
+      <button type="button" class="burger-btn" data-menu-open>
+        <svg class="burger-btn__icon" width="20" height="12">
+          <use href="./images/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <button type="button" class="header__btn">Buy now</button>
+    </div>
   </div>
 </section>
 <section class="hero">
@@ -43,8 +56,7 @@
       </li>
       <li class="hero-asside__item">
         <p class="hero-asside__text">
-          <span class="hero-asside__span">23</span>
-          food trucks
+          <span class="hero-asside__span">23</span>food trucks
         </p>
       </li>
     </ul>

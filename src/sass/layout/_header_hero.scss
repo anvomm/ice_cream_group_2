@@ -1,0 +1,86 @@
+.header {
+  background-color: $background-rose-color;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .header__container {
+    padding-top: 8px;
+  }
+
+  .header__btn {
+    display: none;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .header__nav {
+    display: none;
+  }
+
+  .burger-btn {
+    display: block;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
+  .burger-btn__icon {
+    display: block;
+    stroke: $accent-red-color;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    padding-top: 32px;
+  }
+  .header-btn__wrap {
+    display: flex;
+  }
+  .burger-btn {
+    margin-right: 32px;
+  }
+  .header__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 160px;
+    height: 44px;
+    @include font(700, 16px, 21px);
+    color: $accent-red-color;
+    background-color: $background-primary-color;
+    border-radius: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__container {
+    padding-top: 37px;
+  }
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+  .nav-menu__link {
+    @include font(700, 16px, 21px);
+    color: $white-text-color;
+    &--active {
+      color: $accent-red-color;
+    }
+    &:hover,
+    &:focus {
+      color: $accent-red-color;
+    }
+  }
+
+  .burger-btn {
+    display: none;
+  }
+}
+
+.hero {
+  background-color: $background-rose-color;
+}
