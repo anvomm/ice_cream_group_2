@@ -1,0 +1,6 @@
+.modal__btn{
+    min-width: 160px;
+    @include font();
+    border: none;
+    border-radius: 22px;
+}
