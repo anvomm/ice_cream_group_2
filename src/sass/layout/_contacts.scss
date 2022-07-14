@@ -1,0 +1,78 @@
+@media screen and (min-width: 480px) {
+    
+    .places{
+        
+        background: tomato;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+        padding-top: 40px;
+        padding-left: 32px;
+        padding-bottom: 40px;
+    }
+    
+    .places__name{
+        
+        background: #F0D1A5;
+        border-radius: 4px;
+        width: 80px;
+        height: 16px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
+        
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+        
+        color: #FFFFFF;
+    }
+
+    .places__city{
+        
+        text-align: left;
+        padding-top: 20px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
+        
+        letter-spacing: 0.04em;
+        
+        color: #000000;
+    }
+
+    .places__text{
+        position: relative;
+        
+        padding-right: 69px;
+        text-align: left;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        
+        
+        color: #907E82;
+    }
+
+    .places__text::after{
+        content: "";
+        position: absolute;
+        width: 216px;
+        height: 0px;
+        left: 32px;
+        bottom: -24px;
+        
+        border: 1px solid teal;
+    }
+
+    .schedule{
+        margin-top: 48px;
+    }
+    
+}
