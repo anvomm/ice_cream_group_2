@@ -9,7 +9,10 @@
 }
 .slogan-block {
     display: flex;
+    flex-direction: column;
     width: 234px;
+    gap: 16px;
+    margin-bottom: 40px;
 }
 .slogan-block__text-1 {
     font-family: 'Titan One';
@@ -28,13 +31,14 @@
     line-height: 39px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    
     color: #D41443;
 }
 .contacts-block {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
+    gap: 40px;
+    margin-bottom: 40px;
 }
 .contacts-phone {
     font-family: 'DM Sans';
@@ -64,12 +68,20 @@
     line-height: 152%;
     text-align: center;
     color: #907E82;
+    width: 135px;
 }
 .copyright-block {
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 3px;
     border-top-style: solid;
     border-top-width: 1px;
     border-top-color: #E1E1E1;
+    margin-left: -20px;
+    margin-right: -20px;
 }
+
 /*--подчеркивание  и подсвечивание текущей страницы--*/
 /* .bottom-border::before {
     content: "";
