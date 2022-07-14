@@ -1,0 +1,43 @@
+.slider__card {
+
+    background-color: transparent;
+}
+.slider__text-box {
+    position: relative;
+    margin: 0 auto;
+    width: 280px;
+    height: 308px;
+    background-color: #fafafa;
+}
+.slider__text {
+    position: relative;
+    @include font(500, 12px, 31px);
+    text-align: center;
+    margin: 0 auto;
+    padding: 43px 58px 26px 65px;
+    height: 100%;
+}
+.slider__text::before {
+    content: url(../images/reviews/quotes.svg);
+    position: absolute;
+    top: 30px;
+    left: 53px;
+}
+.slider__text-wrap {
+    position: relative;
+    z-index: 10;
+}
+.slider__text-box-gradient {
+    position: absolute;
+    top: 74px;
+    left: 50px;
+    width: 180px;
+    height: 217px;
+    background-image: repeating-linear-gradient(to bottom, #fafafa 1px, #fafafa 30px, #e1e1e1 30px, #e1e1e1 31px);
+
+}
+.slider__photo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+}
