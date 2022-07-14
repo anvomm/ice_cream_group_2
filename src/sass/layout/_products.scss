@@ -1,0 +1,39 @@
+.products__wrapper{
+    display:block;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.products__wrapper--first{
+    background-color: $background-rose-color;
+}
+
+.products__wrapper--second{
+    background-color: $background-coffee-color;
+}
+
+.products__wrapper--third{
+    background-color: $background-green-color;
+}
+
+.products__title{
+    font-family: 'Titan One';
+    @include font($fw: 400, $fs: 20px, $lh: 23px);
+    color: $white-text-color;
+    text-transform: uppercase;
+}
+
+.products__text{
+    @include font($fs: 14px);
+    color: $white-text-color;
+}
+
+.products__button{
+    margin-top: 32px;
+    border-radius: 50%;
+}
+
+.products__icon{
+    width: 12px;
+    height: 10px;
+}
