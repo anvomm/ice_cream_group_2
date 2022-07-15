@@ -44,11 +44,8 @@
   }
   .header__btn {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    width: 160px;
-    height: 44px;
+    align-items: baseline;
+    padding: 12px 37px;
     @include font(700, 16px, 21px);
     color: $accent-red-color;
     background-color: $background-primary-color;
@@ -58,12 +55,17 @@
       background-color: $hover-background-color;
     }
   }
+  .btn-icon {
+    margin-left: 12px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .header__container {
-    padding-top: 37px;
+    padding-top: 40px;
   }
   .nav-menu {
+    position: relative;
+    z-index: 2;
     display: flex;
     align-items: center;
     gap: 35px;
@@ -218,11 +220,14 @@
     padding-top: 60px;
     padding-bottom: 130px;
     &::after {
-      width: 345px;
-      height: 345px;
-      top: 7%;
-      left: 11%;
+      width: 535px;
+      height: 535px;
+      bottom: 77px;
+      left: 44%;
     }
+  }
+  .hero__icecream {
+    left: 53%;
   }
   .hero__title {
     @include font(400, 38px, 44px);
