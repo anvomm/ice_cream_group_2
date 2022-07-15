@@ -4,7 +4,7 @@
 }
 .slider__text-box {
     position: relative;
-    margin: 0 auto 36px;
+    margin: 0 auto 16px;
     width: 280px;
     height: 308px;
     background-color: #fafafa;
@@ -23,6 +23,37 @@
     position: absolute;
     top: 30px;
     left: 53px;
+}
+.slider__dots {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #c7133e;
+}
+.slider__dots::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -10px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #c7133e;
+}
+.slider__dots::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 10px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #c7133e;
 }
 .slider__text-wrap {
     position: relative;
