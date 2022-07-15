@@ -1,6 +1,6 @@
 .slider__card {
-
-    background-color: transparent;
+    height: 530px;
+    
 }
 .slider__text-box {
     position: relative;
@@ -76,4 +76,24 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 32px;
+}
+.swiper-pagination-bullet-active {
+    background: transparent;
+    background-image: url(../images/reviews/home.svg);
+    background-position: center;
+    background-size: cover;
+}
+.swiper-pagination-bullet {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    text-align: center;    
+}
+.swiper-horizontal>.swiper-pagination-bullets:not(:last-child) .swiper-pagination-bullet:not(:last-child),
+.swiper-pagination-horizontal.swiper-pagination-bullets:not(:last-child) .swiper-pagination-bullet:not(:last-child) {
+    margin-right: 18px;
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-left: 0;
 }
