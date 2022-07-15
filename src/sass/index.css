@@ -361,6 +361,10 @@ body {
     padding-top: 136px;
     padding-bottom: 158px;
   }
+  .hero__container::after {
+    content: "";
+    position: absolute;
+  }
   .hero__title {
     font-weight: 400;
     font-size: 26px;
@@ -400,10 +404,7 @@ body {
     letter-spacing: 0.04em;
   }
   .hero-asside__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.2857142857;
-    letter-spacing: 0;
+    color: #ffffff;
   }
   .hero-asside__span {
     font-family: "Titan One";

@@ -88,6 +88,11 @@
 .hero {
   background-color: $background-rose-color;
 }
+.hero__container {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
 .hero__title {
   font-family: 'Titan One';
   text-transform: uppercase;
@@ -121,6 +126,23 @@
   .hero__container {
     padding-top: 136px;
     padding-bottom: 158px;
+    &::after {
+      content: '';
+      z-index: -2;
+      position: absolute;
+      width: 345px;
+      height: 345px;
+      top: 7%;
+      left: 11%;
+      border-radius: 50%;
+      background-color: $background-rose-second-color;
+    }
+  }
+  .hero__icecream {
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    left: 36%;
   }
   .hero__title {
     @include font(400, 26px, 30px);
