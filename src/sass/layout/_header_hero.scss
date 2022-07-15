@@ -148,6 +148,9 @@
       @include font(400, 34px, 31px);
     }
   }
+  .hero-asside__text {
+    color: $white-text-color;
+  }
   .hero-asside__span {
     font-family: 'Titan One';
     color: $accent-red-color;
@@ -164,6 +167,9 @@
   }
   .hero__commentary {
     @include font(400, 8px, 12px);
+  }
+  .hero-asside__text {
+    @include font(400, 8px, 10px, 0);
   }
   .hero-asside__span {
     @include font(400, 28px, 32px);
@@ -191,6 +197,9 @@
   }
   .hero__commentary {
     @include font(400, 14px, 20px);
+  }
+  .hero-asside__text {
+    @include font(400, 14px, 18px, 0);
   }
   .hero-asside__span {
     @include font(400, 46px, 53px);
