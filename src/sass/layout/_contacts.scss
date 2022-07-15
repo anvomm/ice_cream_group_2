@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
     
     .places{
         
@@ -13,7 +13,7 @@
     }
     
     .places__name{
-
+        padding: 4px 25px;
         margin-bottom: 20px;
         
         background:#f0d1a5;
@@ -41,6 +41,12 @@
         background: #C2E297;
         color: #FFFFFF;
         margin-bottom: 20px;
+        width: 130px;
+        height: 16px;
+        padding: 0px 18px;
+        
+        
+        border-radius: 4px;
     }
 
     .places__city{
@@ -77,10 +83,11 @@
     .places__text::after{
         content: "";
         position: absolute;
-        width: 216px;
+        
         height: 0px;
-        left: 32px;
+        left: 0;
         bottom: 24px;
+        right: -32px;
         
         border: 1px solid #E1E1E1;
     }
@@ -104,11 +111,11 @@
     .schedule__time-after::after{
         content: "";
         position: absolute;
-        width: 216px;
+        
         height: 0px;
-        left:32px;
+        left:0;
         bottom: -24px;
-        right: 32px;
+        right: -32px;
         
         border: 1px solid #E1E1E1;
     }
@@ -137,18 +144,24 @@
         color: #FFA5BA;
     }
 
+    .contacts-card__link{
+        color: #907E82;
+
+        &:hover,
+        &:focus {
+            color: #D41443;
+        }
+    }
+
     .contacts-card__tel{
         font-family: 'DM Sans';
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
         line-height: 18px;
-        color: #907E82;
+        
 
-        &:hover,
-        &:focus{
-            color: #D41443;
-        }
+        
     }
 
     .contacts-card__mail{
@@ -165,13 +178,70 @@
 
     .info__item{
         margin-bottom: 20px;
+        padding-left: 32px;
+        padding-right: 69px;
     }
 
     .info__item:last-child{
         margin-bottom: 0;
     }
 
+    .modal__btn_contacts{
+        
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        
+        height: 44px;
+        min-width: 162px;
+        color: #FFFFFF;
+        
+        
+        background: #D41342;
+        border-radius: 22px;
+    }
 
+    .btn{
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn__1{
+        margin-bottom: 10px;
+    }
+
+    .modal__btn_franchise{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        
+        height: 44px;
+        min-width: 162px;
+        color: #D41443;
+        background: #FFFFFF;
+        border-radius: 22px;
+    }
+}
+
+@media screen and (min-width: 768px){
+.places {
+
+
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+
+    .info{
+        display: flex;
+        
+    }
 
     
+
 }
