@@ -17,6 +17,7 @@
     margin: 0 auto;
     padding: 43px 58px 26px 65px;
     height: 100%;
+    width: 100%;
 }
 .slider__text::before {
     content: url(../images/reviews/quotes.svg);
@@ -82,6 +83,7 @@
     background-image: url(../images/reviews/home.svg);
     background-position: center;
     background-size: cover;
+    border-radius: 0;
 }
 .swiper-pagination-bullet {
     display: inline-block;
@@ -96,4 +98,74 @@
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .slider__card {
+        height: 373px;
+    }
+    .slider__photo {
+        margin-bottom: 20px;
+    }
+    .slider__text-box {
+        width: 620px;
+        height: 164px;
+        margin-bottom: 4px;
+    }
+    .slider__text::before {
+        top: 20px;
+        left: 6px;
+        width: 60px;
+        height: 40px;
+    }
+    .slider__text {
+        width: 100%;
+        padding: 37px 55px 44px 51px;
+        @include font (500, 14px, 30px);
+        
+    
+    }
+    .slider__text-box-gradient {
+        top: 68px;
+        left: 6px;
+        width: 608px;
+        height: 61px;
+        background-image: repeating-linear-gradient(to bottom, #fafafa 1px, #fafafa 30px, #e1e1e1 30px, #e1e1e1 31px);
+    
+    }
+    .slider__subscript {
+        text-align: center;
+        @include font (500, 16px, 30px);
+    }
+
+
+}
+@media screen and (min-width: 1200px) {
+    .slider__card {
+        height: 358px;
+    }
+    .slider__photo {
+        margin-bottom: 16px;
+    }
+    .slider__text-box {
+        width: 968px;
+        height: 138px;
+        margin-bottom: 16px;
+    }
+    .slider__text {
+        padding: 47px 109px 39px;
+        @include font (500, 16px, 30px);
+    }
+    .slider__text::before {
+        top: 32px;
+        left: 72px;
+        width: 54px;
+    }
+    .slider__text-box-gradient {
+        top: 76px;
+        left: 73px;
+        width: 821px;
+        height: 31px;
+        background-image: repeating-linear-gradient(to bottom, #fafafa 1px, #fafafa 30px, #e1e1e1 30px, #e1e1e1 31px);
+    }
 }
