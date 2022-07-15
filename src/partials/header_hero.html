@@ -35,11 +35,51 @@
 </section>
 <section class="hero">
   <div class="hero__container container">
-    <img
-      class="hero__icecream"
-      src="./images/mobile/hero/hero-img1.png"
-      alt="Icecream"
-    />
+    <picture class="hero__icecream">
+      <source
+        srcset="
+          ./images/desktop/hero/hero-img1.webp    1x,
+          ./images/desktop/hero/hero-img1@2x.webp 2x
+        "
+        media="(min-width: 1200px)"
+        type="image/.webp" />
+      <source
+        srcset="
+          ./images/desktop/hero/hero-img1.png    1x,
+          ./images/desktop/hero/hero-img1@2x.png 2x
+        "
+        media="(min-width: 1200px)" />
+
+      <source
+        srcset="
+          ./images/tablet/hero/hero-img1.webp    1x,
+          ./images/tablet/hero/hero-img1@2x.webp 2x
+        "
+        media="(min-width: 768px)"
+        type="image/webp" />
+      <source
+        srcset="
+          ./images/tablet/hero/hero-img1.png    1x,
+          ./images/tablet/hero/hero-img1@2x.png 2x
+        "
+        media="(min-width: 768px)" />
+
+      <source
+        srcset="
+          ./images/mobile/hero/hero-img1.webp    1x,
+          ./images/mobile/hero/hero-img1@2x.webp 2x
+        "
+        media="(max-width: 767px)"
+        type="image/webp" />
+      <source
+        srcset="
+          ./images/mobile/hero/hero-img1.png    1x,
+          ./images/mobile/hero/hero-img1@2x.png 2x
+        "
+        media="(max-width: 767px)" />
+      <img src="./images/mobile/hero/hero-img1.png" alt="Icecream"
+    /></picture>
+
     <div class="hero-left__container">
       <h1 class="hero__title">
         ice cream <br />

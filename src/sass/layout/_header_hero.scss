@@ -91,7 +91,13 @@
 .hero__container {
   position: relative;
   z-index: 1;
-  overflow: hidden;
+  &::after {
+    content: '';
+    z-index: -2;
+    position: absolute;
+    border-radius: 50%;
+    background-color: $background-rose-second-color;
+  }
 }
 .hero__title {
   font-family: 'Titan One';
@@ -121,27 +127,25 @@
 .hero__commentary {
   color: $white-text-color;
 }
+.hero__icecream {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+}
 
 @media screen and (max-width: 767px) {
   .hero__container {
     padding-top: 136px;
     padding-bottom: 158px;
+    overflow: hidden;
     &::after {
-      content: '';
-      z-index: -2;
-      position: absolute;
       width: 345px;
       height: 345px;
-      top: 7%;
-      left: 11%;
-      border-radius: 50%;
-      background-color: $background-rose-second-color;
+      bottom: 75px;
+      left: 12%;
     }
   }
   .hero__icecream {
-    z-index: -1;
-    position: absolute;
-    bottom: 0;
     left: 36%;
   }
   .hero__title {
@@ -162,7 +166,16 @@
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
-    padding-bottom: 16px;
+    padding-bottom: 80px;
+    &::after {
+      width: 335px;
+      height: 335px;
+      bottom: 40px;
+      left: 32%;
+    }
+  }
+  .hero__icecream {
+    left: 42%;
   }
   .hero__title {
     @include font(400, 22px, 25px);
@@ -189,6 +202,8 @@
   }
   .hero__commentary {
     @include font(400, 8px, 12px);
+    margin-top: 61px;
+    margin-left: 150px;
   }
   .hero-asside__text {
     @include font(400, 8px, 10px, 0);
@@ -201,7 +216,13 @@
 @media screen and (min-width: 1200px) {
   .hero__container {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 130px;
+    &::after {
+      width: 345px;
+      height: 345px;
+      top: 7%;
+      left: 11%;
+    }
   }
   .hero__title {
     @include font(400, 38px, 44px);
@@ -219,6 +240,8 @@
   }
   .hero__commentary {
     @include font(400, 14px, 20px);
+    margin-top: 108px;
+    margin-left: 210px;
   }
   .hero-asside__text {
     @include font(400, 14px, 18px, 0);
