@@ -104,7 +104,7 @@
         bottom: -24px;
         right: 32px;
         
-        border: 1px solid teal;
+        border: 1px solid #E1E1E1;
     }
 
     .schedule__day{
@@ -137,10 +137,12 @@
         font-weight: 500;
         font-size: 12px;
         line-height: 18px;
-        /* or 150% */
-        
-        
         color: #907E82;
+
+        &:hover,
+        &:focus{
+            background: #D41443;
+        }
     }
 
     .contacts-card__mail{
