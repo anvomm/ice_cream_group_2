@@ -4,10 +4,11 @@
 }
 .slider__text-box {
     position: relative;
-    margin: 0 auto;
+    margin: 0 auto 36px;
     width: 280px;
     height: 308px;
     background-color: #fafafa;
+    
 }
 .slider__text {
     position: relative;
@@ -35,6 +36,10 @@
     height: 217px;
     background-image: repeating-linear-gradient(to bottom, #fafafa 1px, #fafafa 30px, #e1e1e1 30px, #e1e1e1 31px);
 
+}
+.slider__subscript {
+    text-align: center;
+    @include font (500, 14px, 26px);
 }
 .slider__photo {
     margin-left: auto;
