@@ -96,15 +96,103 @@
     color: $accent-red-color;
   }
 }
+.hero-menu {
+  display: flex;
+}
+.hero-menu__item {
+  display: flex;
+}
+.hero-menu__link {
+  border-radius: 20px;
+  &--red {
+    color: $white-text-color;
+    background-color: $accent-red-color;
+  }
+  &--light {
+    color: $accent-red-color;
+    background-color: $background-primary-color;
+  }
+}
+.hero__commentary {
+  color: $white-text-color;
+}
+
 @media screen and (max-width: 767px) {
   .hero__container {
     padding-top: 136px;
     padding-bottom: 158px;
   }
   .hero__title {
+    @include font(400, 26px, 30px);
+    &--span {
+      @include font(400, 48px, 46px);
+    }
+  }
+  .hero__commentary {
+    display: none;
+  }
+  .hero-right__container {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 16px;
+  }
+  .hero__title {
+    @include font(400, 22px, 25px);
+    &--span {
+      @include font(400, 34px, 31px);
+    }
+  }
+  .hero-asside__span {
+    font-family: 'Titan One';
+    color: $accent-red-color;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .hero-menu {
+    gap: 8px;
+    margin-top: 20px;
+  }
+  .hero-menu__link {
+    padding: 7px 14px;
+    @include font(400, 8px, 10px, 0);
+  }
+  .hero__commentary {
+    @include font(400, 8px, 12px);
+  }
+  .hero-asside__span {
+    @include font(400, 28px, 32px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .hero__title {
     @include font(400, 38px, 44px);
     &--span {
       @include font(400, 58px, 52px);
     }
+  }
+  .hero-menu {
+    gap: 12px;
+    margin-top: 24px;
+  }
+  .hero-menu__link {
+    padding: 11px 23px;
+    @include font(400, 14px, 18px, 0);
+  }
+  .hero__commentary {
+    @include font(400, 14px, 20px);
+  }
+  .hero-asside__span {
+    @include font(400, 46px, 53px);
   }
 }
