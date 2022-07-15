@@ -2,7 +2,7 @@
     
     .places{
         
-        background: tomato;
+        
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         border-radius: 24px;
         padding-top: 40px;
@@ -73,6 +73,11 @@
 
     .schedule{
         margin-top: 48px;
+    }
+
+    .name{
+        padding-top: 48px;
+        padding-bottom: 48px;
     }
     
 }
