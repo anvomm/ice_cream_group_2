@@ -206,6 +206,30 @@ body {
   fill: #FEA5BB;
 }
 
+.map {
+  border-radius: 10%;
+}
+
+.modal-close-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.modal-close-button__icon {
+  fill: #ffa5ba;
+  transition: fill 250ms linear;
+}
+.modal-close-button:hover .modal-close-button__icon, .modal-close-button:focus .modal-close-button__icon {
+  fill: #d41443;
 .gallery.element-animation {
   opacity: 0;
   transform: translateY(20px);
