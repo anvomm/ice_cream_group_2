@@ -1,15 +1,18 @@
-@media screen and (min-width: 480px){
-    
+
+    .container{
+        background-color: tomato;
+    }
     
     .places{
         
-        
+        background-color: #C2E297;
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         border-radius: 24px;
         padding-top: 40px;
         padding-left: 32px;
         padding-bottom: 40px;
         padding-right: 69px;
+        
 
     }
     
@@ -44,7 +47,7 @@
         margin-bottom: 20px;
         width: 130px;
         height: 16px;
-        padding: 0px 18px;
+        padding: 0px 15px;
         
         
         border-radius: 4px;
@@ -87,7 +90,7 @@
         
         height: 0px;
         left: 0;
-        bottom: 24px;
+        bottom: -24px;
         right: -32px;
         
         border: 1px solid #E1E1E1;
@@ -97,7 +100,7 @@
 
     .name{
         position: relative;
-        padding-bottom: 48px;
+        margin-bottom: 48px;
     }
 
     .days{
@@ -181,6 +184,7 @@
         margin-bottom: 20px;
         padding-left: 32px;
         padding-right: 69px;
+        
     }
 
     .info__item:last-child{
@@ -229,15 +233,17 @@
         background: #FFFFFF;
         border-radius: 22px;
     }
-}
+
 
 
 @media screen and (min-width: 768px){
-    
+    .name{
+        margin-bottom: 64px;
+    }
 
     .info{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         
         
     }
@@ -246,10 +252,27 @@
         padding-left: 0;
         padding-right: 0;
         margin-bottom: 60px;
+        margin-right: 32px;
+    }
+
+    .info__item:last-child{
+        margin-right: 0;
     }
 
     .places{
-        padding-right: 33px;
+        width: 100%;
+    
+
+    .places__name{
+        margin-bottom: 32px;
+    }
+
+    .places__name-foodtrack{
+        margin-bottom: 32px;
+    }
+
+    .places__city{
+        margin-bottom: 12px;
     }
 
     
@@ -262,8 +285,31 @@
         right: 0;
     }
 
+    .schedule{
+        margin-bottom: 12px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
     .schedule__time-after::after{
         right: 0;
+    }
+
+    .days{
+        margin-bottom: 64px;
+    }
+
+    .places__text::after {
+        right: 0;
+        bottom: -32px;
+    
+    }
+    
+    .schedule__time-after::after {
+        right: 0;
+        bottom: -32px;
+        width: 100%;
     }
 
     .btn{
@@ -275,22 +321,19 @@
 
 @media screen and (min-width: 1200px){
     .places {
-        padding-right: 85px;
-        padding-left: 40px;
+        width: 100%;
+        
+    }
+
+    .places__city{
+        margin-bottom: 8px;
     }
 
     .places__text {
         padding-right: 85px;
     }
 
-    .places__text::after {
-        right: -40px;
-        
-    }
-
-    .schedule__time-after::after {
-        right: -40px;
-    }
+   
 
     .btn {
         
