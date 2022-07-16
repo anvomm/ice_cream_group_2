@@ -1,15 +1,21 @@
-@media screen and (min-width: 480px){
-    
+.section-contacts {
+    // background-color: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4))
+    // (rgba(229, 229, 229, 0,4), rgba(255, 245, 246, 0,4));
+    background-image: linear-gradient(to bottom,
+            #E5E5E5 15%,
+            #FFF5F6 85%);
+
+}
+  
+
     
     .places{
         
-        
+        background-color:$background-primary-color;
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         border-radius: 24px;
-        padding-top: 40px;
-        padding-left: 32px;
-        padding-bottom: 40px;
-        padding-right: 69px;
+        
+        
 
     }
     
@@ -17,13 +23,11 @@
         padding: 4px 25px;
         margin-bottom: 20px;
         
-        background:#f0d1a5;
+        background:$background-coffee-color ;
         border-radius: 4px;
         width: 80px;
         height: 16px;
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 500;
+        
         font-size: 12px;
         line-height: 186%;
         
@@ -33,18 +37,20 @@
         text-align: center;
         letter-spacing: 0.04em;
         
-        color: #FFFFFF;
+        color: $background-primary-color;
         
         
     }
     
     .places__name-foodtrack{
-        background: #C2E297;
-        color: #FFFFFF;
+        background: $background-green-color;
+        color: $background-primary-color;
         margin-bottom: 20px;
         width: 130px;
         height: 16px;
-        padding: 0px 18px;
+        padding: 0px 15px;
+        font-size: 12px;
+        line-height: 186%;
         
         
         border-radius: 4px;
@@ -63,7 +69,7 @@
         
         letter-spacing: 0.04em;
         
-        color: #000000;
+        color: $secondary-text-color;
     }
 
     .places__text{
@@ -78,7 +84,7 @@
         line-height: 18px;
         
         
-        color: #907E82;
+        color: $primary-text-color;
     }
 
     .places__text::after{
@@ -87,7 +93,7 @@
         
         height: 0px;
         left: 0;
-        bottom: 24px;
+        bottom: -24px;
         right: -32px;
         
         border: 1px solid #E1E1E1;
@@ -97,7 +103,7 @@
 
     .name{
         position: relative;
-        padding-bottom: 48px;
+        margin-bottom: 48px;
     }
 
     .days{
@@ -130,7 +136,7 @@
         /* or 22px */
         
         
-        color: #000000;
+        color: $secondary-text-color;
     }
 
     .schedule__time{
@@ -146,11 +152,14 @@
     }
 
     .contacts-card__link{
-        color: #907E82;
+        color: $primary-text-color;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover,
         &:focus {
-            color: #D41443;
+            color: $accent-red-color;
         }
     }
 
@@ -174,13 +183,14 @@
         /* or 150% */
         
         
-        color: #907E82;
+        color: $primary-text-color;
     }
 
     .info__item{
         margin-bottom: 20px;
         padding-left: 32px;
         padding-right: 69px;
+        
     }
 
     .info__item:last-child{
@@ -197,11 +207,23 @@
         
         height: 44px;
         min-width: 162px;
-        color: #FFFFFF;
-        
-        
-        background: #D41342;
+        color: $background-primary-color;
+        background-color: #D41342;
         border-radius: 22px;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus{
+            background-color:#FFA5BA;
+            
+        }
+    }
+
+    .btn-icon-contacts{
+        fill:   $background-primary-color;
+        margin-left: 8px;
     }
 
     .btn{
@@ -212,9 +234,7 @@
         align-items: center;
     }
 
-    .btn__1{
-        margin-bottom: 10px;
-    }
+    
 
     .modal__btn_franchise{
         font-family: 'DM Sans';
@@ -225,19 +245,54 @@
         
         height: 44px;
         min-width: 162px;
-        color: #D41443;
-        background: #FFFFFF;
+        color: $accent-red-color;
+        background-color: $background-primary-color;
         border-radius: 22px;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            background-color:#ecebeb;
+            
+        }
+    }
+
+@media screen and (max-width: 767px){
+    .places{
+        padding-top: 40px;
+        padding-left: 32px;
+        padding-bottom: 40px;
+        padding-right: 69px;
+    }
+
+    .btn__1 {
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 
-
 @media screen and (min-width: 768px){
+    .section-contacts {
+        // background-color: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4))
+        // (rgba(229, 229, 229, 0,4), rgba(255, 245, 246, 0,4));
+        background-image: linear-gradient(to bottom,
+                #E5E5E5 40%,
+                #FFF5F6 60%);
     
+    }
+
+    .name{
+        margin-bottom: 64px;
+    }
 
     .info{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         
         
     }
@@ -246,50 +301,240 @@
         padding-left: 0;
         padding-right: 0;
         margin-bottom: 60px;
+        margin-right: 32px;
+    }
+
+    .info__item:last-child{
+        margin-right: 0;
     }
 
     .places{
-        padding-right: 33px;
+        width: 100%;
+       padding-left: 32px;
+       padding-top: 40px;
+       padding-bottom: 40px;
+       
+    }
+
+    .places__name{
+        margin-bottom: 32px;
+        font-size: 16px;
+        padding: 0 15px;
+        width: 73px;
+        text-align: center;
+        line-height: 186%;
+        height: 28px;
+    }
+
+    .places__name-foodtrack{
+        margin-bottom: 32px;
+        font-size: 16px;
+        height: 28px;
+    }
+
+    .places__city{
+        margin-bottom: 12px;
+        line-height: 186%;
     }
 
     
 
     .places__text{
         padding-right: 33px;
+        font-size: 14px;
+        line-height: 166%;
     }
 
     .places__text::after{
-        right: 0;
+        right: 32px;
+        bottom: -32px;
     }
 
-    .schedule__time-after::after{
-        right: 0;
+    .schedule{
+        margin-bottom: 12px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    .schedule__day{
+        font-size: 14px;
+        line-height: 186%;
+    }
+
+    .schedule__time{
+        font-size: 14px;
+        line-height: 186%;
+    }
+
+    
+
+    .days{
+        margin-bottom: 64px;
+    }
+
+    
+    
+    .schedule__time-after::after {
+        right: 32px;
+        bottom: -32px;
+        
+    }
+
+    .contacts-card__tel{
+        font-size: 14px;
+        line-height: 183%;
+    }
+
+    .contacts-card__mail{
+        font-size: 14px;
+        line-height: 183%;
     }
 
     .btn{
         flex-direction: row;
-        margin-right: 15px;
+        
+        
     }
 
+    .btn__1{
+        margin-right: 15px;
+        
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+   
 }
 
 @media screen and (min-width: 1200px){
+.section-contacts {
+    // background-color: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4))
+    // (rgba(229, 229, 229, 0,4), rgba(255, 245, 246, 0,4));
+    background-image: linear-gradient(to bottom,
+            #E5E5E5 5%,
+            #FFF5F6 95%);
+
+}
+
     .places {
-        padding-right: 85px;
-        padding-left: 40px;
+        width: 100%;
+        
+    }
+
+    .places__name{
+        font-size: 16px;
+    }
+
+    .places__city{
+        margin-bottom: 8px;
+        font-size: 16px;
     }
 
     .places__text {
         padding-right: 85px;
+        
+        font-size: 16px;
+        line-height: 183%;
+        
+        
+        letter-spacing: 0.04em;
+        
+        color: $primary-text-color;
     }
 
-    .places__text::after {
-        right: -40px;
+    .schedule__day {
+        
+        font-size: 16px;
+        line-height: 186%;
+        
+        
+        letter-spacing: 0.04em;
+        
+        color: $secondary-text-color;
+    }
+    
+    .schedule__time {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 186%;
+        
+        
+        
+        color: #FFA5BA;
+    }
+
+    .contacts-card__tel {
+        ffont-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 183%;
+        /* or 29px */
+        
+        
+        color: $primary-text-color;
+    }
+    
+    .contacts-card__mail {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 183%;
+        /* or 29px */
+        
+        
+        color: $primary-text-color;
+    }
+
+    .modal__btn_contacts{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        min-width: 198px;
+        text-align: center;
+        align-content: baseline;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        color: $background-primary-color;
+    }
+
+    .modal__btn_franchise{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        
+        color: $accent-red-color;
+        min-width: 168px;
+        text-align: center;
+        align-content: baseline;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
         
     }
 
-    .schedule__time-after::after {
-        right: -40px;
+    .btn-icon-contacts{
+        width: 10px;
+        height: 10px;
+        display: flex;
+        align-items: baseline;
+        color: $background-primary-color;
     }
 
     .btn {
