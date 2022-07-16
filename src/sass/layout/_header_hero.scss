@@ -52,6 +52,7 @@
     color: $accent-red-color;
     background-color: $background-primary-color;
     border-radius: 20px;
+    transition: background-color 250ms linear;
     &:hover,
     &:focus {
       background-color: $hover-background-color;
@@ -124,10 +125,12 @@
   &--red {
     color: $white-text-color;
     background-color: $accent-red-color;
+    transition: background-color 250ms linear, color 250ms linear;
   }
   &--light {
     color: $accent-red-color;
     background-color: $background-primary-color;
+    transition: background-color 250ms linear;
   }
   &:focus,
   &:hover {
@@ -240,6 +243,11 @@
     height: 18px;
     border-radius: 50%;
     background-color: $background-primary-color;
+    transition: background-color 250ms linear;
+    &:focus,
+    &:hover {
+      background-color: $hover-background-color;
+    }
   }
   .hero-pointer__icon {
     fill: $accent-red-color;
@@ -409,6 +417,14 @@
     right: 20px;
     background-color: transparent;
     border: none;
+    &:focus .close-btn__icon,
+    &:hover .close-btn__icon {
+      stroke: $hover-background-color;
+    }
+  }
+  .close-btn__icon {
+    stroke: $white-text-color;
+    transition: stroke 250ms linear;
   }
   .mobile-btn__wrap {
     display: flex;
@@ -443,6 +459,7 @@
   .nav-mobile__link {
     @include font(700, 16px, 21px, 0);
     color: $white-text-color;
+    transition: color 250ms linear;
     &--active {
       color: $accent-red-color;
     }
