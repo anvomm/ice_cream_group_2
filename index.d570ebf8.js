@@ -1,2 +1,0 @@
-var swiper=new Swiper(".mySwiper",{loop:!0,grabCursor:!0,longSwipes:!1,pagination:{el:".swiper-pagination",clickable:!0}});(()=>{const e={openModalBtn:document.querySelector("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]")};function o(){e.modal.classList.toggle("modal-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
-//# sourceMappingURL=index.d570ebf8.js.map
