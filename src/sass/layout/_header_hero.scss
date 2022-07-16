@@ -61,7 +61,7 @@
 }
 @media screen and (min-width: 1200px) {
   .header__container {
-    padding-top: 40px;
+    padding-top: 37px;
   }
   .nav-menu {
     position: relative;
@@ -129,10 +129,33 @@
 .hero__commentary {
   color: $white-text-color;
 }
-.hero__icecream {
+.hero__img {
   z-index: -1;
   position: absolute;
-  bottom: 0;
+  &--icecream {
+    bottom: 0;
+  }
+}
+.hero-asside {
+  display: flex;
+  flex-direction: column;
+}
+.hero-asside__item {
+  position: relative;
+  &::after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-color: $background-primary-color;
+    top: -14px;
+    right: -14px;
+  }
+}
+.hero-asside__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 @media screen and (max-width: 767px) {
@@ -147,8 +170,14 @@
       left: 12%;
     }
   }
-  .hero__icecream {
-    left: 36%;
+  .hero__img {
+    &--icecream {
+      left: 36%;
+    }
+    &--milk,
+    &--sootasty {
+      display: none;
+    }
   }
   .hero__title {
     @include font(400, 26px, 30px);
@@ -173,11 +202,20 @@
       width: 335px;
       height: 335px;
       bottom: 40px;
-      left: 32%;
+      left: 248px;
     }
   }
-  .hero__icecream {
-    left: 42%;
+  .hero__img {
+    &--icecream {
+      left: 322px;
+    }
+    &--sootasty {
+      right: 32px;
+      bottom: 0;
+    }
+    &--milk {
+      bottom: 16px;
+    }
   }
   .hero__title {
     @include font(400, 22px, 25px);
@@ -207,6 +245,17 @@
     margin-top: 61px;
     margin-left: 150px;
   }
+  .hero-asside {
+    gap: 17px;
+  }
+  .hero-asside__item {
+    &::after {
+      width: 16px;
+      height: 16px;
+      top: -4px;
+      right: -4px;
+    }
+  }
   .hero-asside__text {
     @include font(400, 8px, 10px, 0);
   }
@@ -223,11 +272,19 @@
       width: 535px;
       height: 535px;
       bottom: 77px;
-      left: 44%;
+      left: 517px;
     }
   }
-  .hero__icecream {
-    left: 53%;
+  .hero__img {
+    &--icecream {
+      left: 636px;
+    }
+    &--sootasty {
+      right: 16px;
+    }
+    &--milk {
+      bottom: 60px;
+    }
   }
   .hero__title {
     @include font(400, 38px, 44px);
@@ -247,6 +304,17 @@
     @include font(400, 14px, 20px);
     margin-top: 108px;
     margin-left: 210px;
+  }
+  .hero-asside {
+    gap: 38px;
+  }
+  .hero-asside__item {
+    &::after {
+      width: 32px;
+      height: 32px;
+      top: -12px;
+      right: -12px;
+    }
   }
   .hero-asside__text {
     @include font(400, 14px, 18px, 0);
