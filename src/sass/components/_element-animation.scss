@@ -1,3 +1,47 @@
+.hero__img.element-animation {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateX(0%);
+}
+
+.hero__title.element-animation {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 0.5s;
+  transform: translateX(0%);
+}
+
+.products__item.element-animation {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}
+
+.about__image.element-animation {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}
+
 .gallery.element-animation {
   opacity: 0;
   transform: translateY(20px);
@@ -9,7 +53,7 @@
   transform: translateY(0%);
 }
 
-.info.element-animation {
+.info__item.element-animation {
   opacity: 0;
   transform: translateY(20px);
 }
