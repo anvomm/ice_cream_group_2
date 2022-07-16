@@ -93,19 +93,10 @@
     line-height: 0;
 }
 
-@media screen and (max-width: 479px){
-    .products__item {
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 480px){
-    .products__item {
-        width: 280px;
-        margin-left: auto;
-        margin-right: auto;
-        
-    }
+.products__item {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media screen and (max-width: 767px){

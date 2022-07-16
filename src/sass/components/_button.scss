@@ -1,3 +1,31 @@
+.back_to_top {
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+    z-index: 9999;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: $rose-text-color;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 50%;
+    display: none;
+    transition: 0.25s;
+}
+
+
+.back_to_top:hover,
+.back_to_top:focus {
+    background: $accent-red-color;
+}
+
+.back_to_top-show {
+    display: block;
+}
+
+
 // .modal__btn{
 //     min-width: 160px;
 //     min-height: 44px;
