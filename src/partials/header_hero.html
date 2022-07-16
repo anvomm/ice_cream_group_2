@@ -1,4 +1,4 @@
-<section class="header">
+<header class="header">
   <div class="header__container container">
     <a class="logo" href="./index.html"
       ><svg class="logo__icon" width="199" height="50">
@@ -29,13 +29,92 @@
           <use href="./images/sprite.svg#icon-burger"></use>
         </svg>
       </button>
-      <button type="button" class="header__btn">Buy now</button>
+      <button type="button" class="header__btn">
+        Buy now<svg class="btn-icon" width="5" height="8">
+          <use href="./images/sprite.svg#icon-vector"></use>
+        </svg>
+      </button>
     </div>
   </div>
-</section>
+</header>
 <section class="hero">
   <div class="hero__container container">
+    <picture class="hero__img hero__img--icecream">
+      <source
+        srcset="
+          ./images/desktop/hero/img3.webp    1x,
+          ./images/desktop/hero/img3@2x.webp 2x
+        "
+        media="(min-width: 1200px)"
+        type="image/.webp" />
+      <source
+        srcset="
+          ./images/desktop/hero/img3.png    1x,
+          ./images/desktop/hero/img3@2x.png 2x
+        "
+        media="(min-width: 1200px)" />
+
+      <source
+        srcset="
+          ./images/tablet/hero/hero-img1.webp    1x,
+          ./images/tablet/hero/hero-img1@2x.webp 2x
+        "
+        media="(min-width: 768px)"
+        type="image/webp" />
+      <source
+        srcset="
+          ./images/tablet/hero/hero-img1.png    1x,
+          ./images/tablet/hero/hero-img1@2x.png 2x
+        "
+        media="(min-width: 768px)" />
+
+      <source
+        srcset="
+          ./images/mobile/hero/hero-img1.webp    1x,
+          ./images/mobile/hero/hero-img1@2x.webp 2x
+        "
+        media="(max-width: 767px)"
+        type="image/webp" />
+      <source
+        srcset="
+          ./images/mobile/hero/hero-img1.png    1x,
+          ./images/mobile/hero/hero-img1@2x.png 2x
+        "
+        media="(max-width: 767px)" />
+      <img src="./images/mobile/hero/hero-img1.png" alt="Icecream"
+    /></picture>
+
     <div class="hero-left__container">
+      <picture class="hero__img hero__img--milk">
+        <source
+          srcset="
+            ./images/desktop/hero/img2.webp    1x,
+            ./images/desktop/hero/img2@2x.webp 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/.webp" />
+        <source
+          srcset="
+            ./images/desktop/hero/img2.png    1x,
+            ./images/desktop/hero/img2@2x.png 2x
+          "
+          media="(min-width: 1200px)" />
+
+        <source
+          srcset="
+            ./images/tablet/hero/hero-img3.webp    1x,
+            ./images/tablet/hero/hero-img3@2x.webp 2x
+          "
+          media="(min-width: 768px)"
+          type="image/webp" />
+        <source
+          srcset="
+            ./images/tablet/hero/hero-img3.png    1x,
+            ./images/tablet/hero/hero-img3@2x.png 2x
+          "
+          media="(min-width: 768px)" />
+        <img src="./images/tablet/hero/hero-img3.png" alt="Milk"
+      /></picture>
       <h1 class="hero__title">
         ice cream <br />
         made with <br />
@@ -59,15 +138,46 @@
       </p>
     </div>
     <div class="hero-right__container">
+      <picture class="hero__img hero__img--sootasty">
+        <source
+          srcset="
+            ./images/desktop/hero/img1.webp    1x,
+            ./images/desktop/hero/img1@2x.webp 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/.webp" />
+        <source
+          srcset="
+            ./images/desktop/hero/img1.png    1x,
+            ./images/desktop/hero/img1@2x.png 2x
+          "
+          media="(min-width: 1200px)" />
+
+        <source
+          srcset="
+            ./images/tablet/hero/hero-img2.webp    1x,
+            ./images/tablet/hero/hero-img2@2x.webp 2x
+          "
+          media="(min-width: 768px)"
+          type="image/webp" />
+        <source
+          srcset="
+            ./images/tablet/hero/hero-img2.png    1x,
+            ./images/tablet/hero/hero-img2@2x.png 2x
+          "
+          media="(min-width: 768px)" />
+
+        <img src="./images/tablet/hero/hero-img2.png" alt="soo tasty"
+      /></picture>
       <ul class="hero-asside">
         <li class="hero-asside__item">
           <p class="hero-asside__text">
-            <span class="hero-asside__span">16</span>cafes
+            <span class="hero-asside__span">16 <br /></span>cafes
           </p>
         </li>
         <li class="hero-asside__item">
           <p class="hero-asside__text">
-            <span class="hero-asside__span">23</span>food trucks
+            <span class="hero-asside__span">23 <br /></span>food trucks
           </p>
         </li>
       </ul>
