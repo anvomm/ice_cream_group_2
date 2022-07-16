@@ -10,16 +10,16 @@
           <a class="nav-menu__link nav-menu__link--active" href="#">Home</a>
         </li>
         <li class="nav-menu__item">
-          <a class="nav-menu__link" href="#">About us</a>
+          <a class="nav-menu__link" href="#about">About us</a>
         </li>
         <li class="nav-menu__item">
-          <a class="nav-menu__link" href="#">How it’s made?</a>
+          <a class="nav-menu__link" href="#about">How it’s made?</a>
         </li>
         <li class="nav-menu__item">
-          <a class="nav-menu__link" href="#">Our products</a>
+          <a class="nav-menu__link" href="#products">Our products</a>
         </li>
         <li class="nav-menu__item">
-          <a class="nav-menu__link" href="#">Contact</a>
+          <a class="nav-menu__link" href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
@@ -29,12 +29,43 @@
           <use href="./images/sprite.svg#icon-burger"></use>
         </svg>
       </button>
-      <button type="button" class="header__btn">
+      <button type="button" class="header__btn" data-modal-open>
         Buy now<svg class="btn-icon" width="5" height="8">
           <use href="./images/sprite.svg#icon-vector"></use>
         </svg>
       </button>
     </div>
+  </div>
+  <div class="mobile-menu" data-menu>
+    <button type="button" class="mobile-menu__close-btn" data-menu-close>
+      <svg class="close-btn__icon" width="14" height="14">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="mobile-btn__wrap">
+      <button type="button" class="mobile-menu__btn" data-modal-open>
+        Buy now<svg class="btn-icon" width="5" height="8">
+          <use href="./images/sprite.svg#icon-vector"></use>
+        </svg>
+      </button>
+    </div>
+    <ul class="nav-mobile">
+      <li class="nav-mobile__item">
+        <a class="nav-mobile__link nav-mobile__link--active" href="#">Home</a>
+      </li>
+      <li class="nav-mobile__item">
+        <a class="nav-mobile__link" href="#about">About us</a>
+      </li>
+      <li class="nav-mobile__item">
+        <a class="nav-mobile__link" href="#about">How it’s made?</a>
+      </li>
+      <li class="nav-mobile__item">
+        <a class="nav-mobile__link" href="#products">Our products</a>
+      </li>
+      <li class="nav-mobile__item">
+        <a class="nav-mobile__link" href="#contact">Contact</a>
+      </li>
+    </ul>
   </div>
 </header>
 <section class="hero">
@@ -122,20 +153,29 @@
       </h1>
       <ul class="hero-menu">
         <li class="hero-menu__item">
-          <a class="hero-menu__link hero-menu__link--red" href="#">Products</a>
+          <a class="hero-menu__link hero-menu__link--red" href="#products"
+            >Products</a
+          >
         </li>
         <li class="hero-menu__item">
-          <a class="hero-menu__link hero-menu__link--light" href="#"
+          <a class="hero-menu__link hero-menu__link--light" href="#about"
             >How it’s made?</a
           >
         </li>
       </ul>
-      <p class="hero__commentary">
-        Lorem ipsum dolor sit amet,<br />
-        consectetur adipiscing elit,<br />
-        sed do eiusmod tempor <br />
-        incididunt ut labore et
-      </p>
+      <div class="hero-commentary__wrap">
+        <p class="hero__commentary">
+          Lorem ipsum dolor sit amet,<br />
+          consectetur adipiscing elit,<br />
+          sed do eiusmod tempor <br />
+          incididunt ut labore et
+        </p>
+        <button class="hero-pointer">
+          <svg class="hero-pointer__icon">
+            <use href="./images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
     </div>
     <div class="hero-right__container">
       <picture class="hero__img hero__img--sootasty">
