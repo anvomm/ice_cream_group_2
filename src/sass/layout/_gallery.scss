@@ -1,5 +1,5 @@
 .section__gallery {
-    background: linear-gradient(to bottom, #FFF5F6 85px, #ffffff 86px);
+    background: linear-gradient(to bottom, #FFF5F6 95px, #ffffff 96px);
 }
 
 .gallery {
@@ -8,16 +8,9 @@
     width: 100%;
 }
 
-
-@media screen and (min-width:480px) {
-    .gallery {
-        max-width: 320px; 
-    }
-} 
-
 @media screen and (min-width:768px) {
     .gallery {
-        max-width: 710px;
+        width: 710px;
     }
 
     .section__gallery {
@@ -27,7 +20,7 @@
 
 @media screen and (min-width:1200px) {
     .gallery {
-        max-width: 1015px;
+        width: 1015px;
     }
 
     .section__gallery {

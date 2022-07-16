@@ -1,18 +1,23 @@
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px){
+    
     
     .places{
         
-        background: tomato;
+        
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         border-radius: 24px;
         padding-top: 40px;
         padding-left: 32px;
         padding-bottom: 40px;
+        padding-right: 69px;
+
     }
     
     .places__name{
+        padding: 4px 25px;
+        margin-bottom: 20px;
         
-        background: #F0D1A5;
+        background:#f0d1a5;
         border-radius: 4px;
         width: 80px;
         height: 16px;
@@ -22,23 +27,39 @@
         font-size: 12px;
         line-height: 186%;
         
+        
         display: flex;
         align-items: center;
         text-align: center;
         letter-spacing: 0.04em;
         
         color: #FFFFFF;
+        
+        
+    }
+    
+    .places__name-foodtrack{
+        background: #C2E297;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+        width: 130px;
+        height: 16px;
+        padding: 0px 18px;
+        
+        
+        border-radius: 4px;
     }
 
     .places__city{
         
         text-align: left;
-        padding-top: 20px;
+        margin-bottom: 8px;
         font-family: 'DM Sans';
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
         line-height: 186%;
+        
         
         letter-spacing: 0.04em;
         
@@ -46,7 +67,7 @@
     }
 
     .places__text{
-        position: relative;
+        
         
         padding-right: 69px;
         text-align: left;
@@ -63,16 +84,216 @@
     .places__text::after{
         content: "";
         position: absolute;
-        width: 216px;
-        height: 0px;
-        left: 32px;
-        bottom: -24px;
         
-        border: 1px solid teal;
+        height: 0px;
+        left: 0;
+        bottom: 24px;
+        right: -32px;
+        
+        border: 1px solid #E1E1E1;
+    }
+
+    
+
+    .name{
+        position: relative;
+        padding-bottom: 48px;
+    }
+
+    .days{
+        margin-bottom: 48px;
     }
 
     .schedule{
-        margin-top: 48px;
+        position: relative;
+        margin-bottom: 8px;
     }
+
+    .schedule__time-after::after{
+        content: "";
+        position: absolute;
+        
+        height: 0px;
+        left:0;
+        bottom: -24px;
+        right: -32px;
+        
+        border: 1px solid #E1E1E1;
+    }
+
+    .schedule__day{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
+        /* or 22px */
+        
+        
+        color: #000000;
+    }
+
+    .schedule__time{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
+        /* identical to box height, or 22px */
+        
+        
+        color: #FFA5BA;
+    }
+
+    .contacts-card__link{
+        color: #907E82;
+
+        &:hover,
+        &:focus {
+            color: #D41443;
+        }
+    }
+
+    .contacts-card__tel{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        
+
+        
+    }
+
+    .contacts-card__mail{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        /* or 150% */
+        
+        
+        color: #907E82;
+    }
+
+    .info__item{
+        margin-bottom: 20px;
+        padding-left: 32px;
+        padding-right: 69px;
+    }
+
+    .info__item:last-child{
+        margin-bottom: 0;
+    }
+
+    .modal__btn_contacts{
+        
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        
+        height: 44px;
+        min-width: 162px;
+        color: #FFFFFF;
+        
+        
+        background: #D41342;
+        border-radius: 22px;
+    }
+
+    .btn{
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn__1{
+        margin-bottom: 10px;
+    }
+
+    .modal__btn_franchise{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        
+        height: 44px;
+        min-width: 162px;
+        color: #D41443;
+        background: #FFFFFF;
+        border-radius: 22px;
+    }
+}
+
+
+@media screen and (min-width: 768px){
     
+
+    .info{
+        display: flex;
+        justify-content: space-between;
+        
+        
+    }
+
+    .info__item{
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 60px;
+    }
+
+    .places{
+        padding-right: 33px;
+    }
+
+    
+
+    .places__text{
+        padding-right: 33px;
+    }
+
+    .places__text::after{
+        right: 0;
+    }
+
+    .schedule__time-after::after{
+        right: 0;
+    }
+
+    .btn{
+        flex-direction: row;
+        margin-right: 15px;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+    .places {
+        padding-right: 85px;
+        padding-left: 40px;
+    }
+
+    .places__text {
+        padding-right: 85px;
+    }
+
+    .places__text::after {
+        right: -40px;
+        
+    }
+
+    .schedule__time-after::after {
+        right: -40px;
+    }
+
+    .btn {
+        
+        margin-right: 12px;
+    }
 }
