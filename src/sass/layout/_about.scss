@@ -100,6 +100,151 @@
     }
 }
 
-.modal__btn {
-    align-items: center;
+
+.modal__btn_about{
+    @include font (700, 16px, 21px);
+    height: 44px;
+    min-width: 170px;
+    color: $accent-red-color;
+    background-color: $background-primary-color;
+    border-radius: 22px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+        background-color: #ecebeb;
+    
+    }
+}
+
+.btn-icon-about {
+    width: 10px;
+    height: 10px;
+    align-items: baseline;
+    color: $background-primary-color;
+}
+
+.backdrop__about {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(195, 22, 55, 0.2);
+    transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.backdrop__about.modal-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.backdrop__about.modal-hidden .modal__about-window {
+    transform: translate(-50%, -50%) scale(0.25);
+}
+
+.modal__about_window {
+    position: absolute;
+    z-index: 150;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    max-width: 700px;
+    height: 450px;
+    padding: 20px;
+    border-radius: 24px;
+
+    background-repeat: no-repeat;
+    background-color: $background-primary-color;
+    overflow-y: auto;
+
+    background-image: url(/src/images/mobile/about/about-bg.png);
+    background-repeat: no-repeat;
+    background-position: center 75%;
+    background-size: contain;
+    
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(/src/images/mobile/about/about-bg@2x.png);
+    }
+    
+    @media screen and(min-width:768px) {
+        background-image: url(/src/images/desktop/about/about-bg.png);
+    
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(/src/images/desktop/about/about-bg@2x.png);
+        }
+    }
+    
+    @media screen and(min-width:1200px) {
+        background-image: url(/src/images/desktop/about/about-bg.png);
+    
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(/src/images/desktop/about/about-bg@2x.png);
+        }
+    }
+}
+
+.modal__about_title{
+    font-family: 'Titan One';
+    @include font($fs: 15px, $lh: 14px);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: $accent-red-color;
+    
+    @media screen and (min-width:768px) {
+        @include font($fs: 18px, $lh: 16px);
+    }
+    
+    @media screen and (min-width: 1200px) {
+        @include font($fs: 24px, $lh: 23px);
+    }
+}
+
+.modal__about_list{
+    padding-left: 20px;
+    @include font($fs: 12px, $lh: 14px);
+    color: $accent-red-color;
+    margin-bottom: 20px;
+    list-style: decimal;
+    
+    @media screen and (min-width:768px) {
+        @include font($fs: 14px, $lh: 16px);
+    }
+    
+    @media screen and (min-width: 1200px) {
+        @include font($fs: 20px, $lh: 23px);
+    }
+}
+
+.modal__about_text {
+    @include font($fs: 12px, $lh: 14px);
+    color: $accent-red-color;
+    margin-bottom: 20px;
+
+    @media screen and (min-width:768px) {
+        @include font($fs: 14px, $lh: 16px);
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include font($fs: 20px, $lh: 23px);
+    }
 }
