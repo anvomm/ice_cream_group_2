@@ -230,6 +230,7 @@ body {
 }
 .modal-close-button:hover .modal-close-button__icon, .modal-close-button:focus .modal-close-button__icon {
   fill: #d41443;
+}
 .gallery.element-animation {
   opacity: 0;
   transform: translateY(20px);

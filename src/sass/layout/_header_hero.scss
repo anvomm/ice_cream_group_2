@@ -7,6 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: -1px;
 }
 
 @media screen and (max-width: 767px) {
@@ -482,4 +483,7 @@
   .mobile-menu {
     display: none;
   }
+}
+.benefits__number {
+  opacity: 0;
 }
