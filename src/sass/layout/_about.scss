@@ -71,7 +71,7 @@
 
 .about__text{
     max-width: 220px;
-    @include font(500, 12px);
+    @include font($fw: 500, $fs: 12px, $lh: 19px);
     color: $secondary-text-color;
     margin-bottom: 20px;
 
@@ -79,22 +79,22 @@
         margin-bottom: 40px;
     }
     &--gray{
-        @include font(500, 12px);
+        @include font($fw: 500, $fs: 12px, $lh: 19px);
         color: $primary-text-color;
     }
 
     @media screen and (min-width:768px) {
         max-width: 335px;
-        @include font(500, 14px);
+        @include font($fw: 500, $fs: 14px, $lh: 25px);
         margin-bottom: 40px;
     }
     @media screen and (min-width:1200px){
         max-width: 464px;
-        @include font(500, 16px);
+        @include font($fw: 500, $fs: 16px, $lh: 28px);
         margin-bottom: 30px;
 
         &--gray{
-            @include font(500, 14px);
+            @include font($fw: 500, $fs: 14px, $lh: 27px);
             margin-bottom: 40px;
         }
     }
