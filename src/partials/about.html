@@ -16,16 +16,37 @@
                 <p class="about__text about__text--black">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.
                 Maecenas eleifend erat at justo fringilla.</p>
                 <p class="about__text about__text--gray">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat.
-                Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
-</p>
+                Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.</p>
                 <p class="about__text about__text--gray">Aliquam erat volutpat. Aenean accumsan.</p>
-                <button class="modal__btn modal__btn_franchise" type="button">Read more
-                    <svg class="btn-icon-contacts" width="5px" height="8px">
+                <button class="modal__btn modal__btn_about" type="button" data-modal-about-open>Read more
+                    <svg class="btn-icon-about" width="5px" height="8px">
                         <use href="./images/sprite.svg#icon-vector"></use>
                     </svg>
                 </button>
             </div>
         </div>
     </div>
-  </div>
+    <div class="backdrop__about  modal-hidden" data-modal-about>
+        <div class="modal__about_window">
+            <h2 class="modal__about_title">How is ice cream made?</h2>
+            <ol class="modal__about_list">
+                <li>Milk, cream, milk solids, sugars, modifying agents and flavourings are blended together in stainless steel vats.</li>
+                <li>The mix is homogenised to create a consistent texture.</li>
+                <li>The mix is pasteurised by heating at 82-85°C for 15 seconds then cooled to destroy bacteria.</li>
+                <li>The mix is left alone for 2-24 hours so fat globules solidify and viscosity increases. Flavours or colourings are added.</li>
+                <li>The mix is frozen (at about -7°C) and beaten (or ‘agitated’). This adds air to the mix.</li>
+                <li>The ice cream is moulded, packaged and frozen at around -25°C to allow it to harden.</li>
+            </ol>
+            <p class="modal__about_text">Making ice cream at home follows a similar process. You can use an ice cream machine to “stir freeze” the mix, which
+            whips in air while the mix freezes.</p>
+            <p class="modal__about_text">Stir freezing" is the method of stirring the mixture by hand a number of times during the freezing period to achieve a
+            smooth texture. Partially frozen mixtures can be stirred in an electric mixer or food processor, though it needs to be
+            processed quickly and returned to the freezer in between.</p>
+            <button type="button" class="window__close-btn" data-modal-about-close>close
+                <svg class="close-btn__icon" width="20px" height="20px">
+                    <use href="/src/images/sprite.svg#icon-ice-cream"></use>
+                </svg>
+                </button>
+        </div>
+    </div>
 </section>
