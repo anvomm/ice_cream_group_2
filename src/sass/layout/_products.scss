@@ -91,6 +91,7 @@
     height: 40px;
     border-radius: 50%;
     line-height: 0;
+    transition: background-color 250ms linear;
     &:hover,
     &:focus {
         background-color: $background-mobile-menu;
@@ -189,12 +190,14 @@
 .close-btn__icon{
     display: inline-block;
     fill: $background-primary-color;
+    transition: fill 250ms linear;
 
 }
 
 .window__close-btn:hover,
 .window__close-btn:focus{
-    background-color: transparent;
+    background-color: $hover-background-color;
+    border: 1px solid $accent-red-color;
     color: $accent-red-color;
     & .close-btn__icon {
         fill: $accent-red-color;
@@ -202,6 +205,7 @@
 }
 .products__icon {
     fill: $accent-red-color;
+    transition: fill 250ms linear;
     .products__button:hover &,
     .products__button:focus & {
         fill: $background-primary-color;
