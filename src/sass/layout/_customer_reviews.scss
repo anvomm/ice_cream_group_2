@@ -90,6 +90,9 @@
     margin-right: 18px;
 }
 @media screen and (max-width: 767px) {
+    .slider {
+        padding-top: 0;
+    }
     .slider__card {
         height: 530px;
     }
