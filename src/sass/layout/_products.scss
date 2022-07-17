@@ -137,7 +137,7 @@
 
     max-width: 370px;
     height: 450px;
-    padding: 40px;
+    padding: 40px 20px;
     border-radius: 24px;
 
     background-image: url('../images/mobile/about/about-bg.png');
@@ -152,6 +152,7 @@
 .window__text{
     @include font($fs: 20px, $lh: 23px);
    color: $accent-red-color;
+   overflow-y: scroll;
 @media screen and (max-width: 479px) {
         @include font($fs: 12px, $lh: 14px);
     }
