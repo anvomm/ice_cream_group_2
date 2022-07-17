@@ -9,15 +9,15 @@
   
 
     
-    .places{
+    // .places{
         
-        background-color:$background-primary-color;
-        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-        border-radius: 24px;
+    //     background-color:$background-primary-color;
+    //     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    //     border-radius: 24px;
         
         
 
-    }
+    // }
     
     .places__name{
         padding: 4px 25px;
@@ -80,6 +80,7 @@
         
         
         
+        
         text-align: left;
         font-family: 'DM Sans';
         font-style: normal;
@@ -91,14 +92,14 @@
         color: $primary-text-color;
     }
 
-    .places__text::after{
+    .name::after{
         content: "";
         position: absolute;
-        
+        width: 100%;
         height: 0px;
         left: 0;
         bottom: -24px;
-        right: -32px;
+        
         
         border: 1px solid #E1E1E1;
     }
@@ -112,23 +113,28 @@
 
     .days{
         margin-bottom: 48px;
-    }
-
-    .schedule{
         position: relative;
-        margin-bottom: 8px;
     }
 
-    .schedule__time-after::after{
+    
+    
+
+    .days::after{
         content: "";
         position: absolute;
-        
+        width: 100%;
         height: 0px;
         left:0;
         bottom: -24px;
-        right: -32px;
-        
         border: 1px solid #E1E1E1;
+    }
+
+    .schedule {
+        margin-bottom: 8px;
+    
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
     .schedule__day{
@@ -137,7 +143,7 @@
         font-weight: 500;
         font-size: 12px;
         line-height: 186%;
-        /* or 22px */
+        
         
         
         color: $secondary-text-color;
@@ -149,7 +155,7 @@
         font-weight: 500;
         font-size: 12px;
         line-height: 186%;
-        /* identical to box height, or 22px */
+        
         
         
         color: #FFA5BA;
@@ -191,16 +197,17 @@
     }
 
     .info__item{
-        margin-bottom: 20px;
+        
        margin-left: auto;
         margin-right: auto;
+        background-color:$background-primary-color;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
         
         
     }
 
-    .info__item:last-child{
-        margin-bottom: 0;
-    }
+    
 
     .modal__btn_contacts{
         
@@ -265,13 +272,11 @@
     }
 
 @media screen and (max-width: 767px){
-    .places{
-        padding-top: 40px;
-        padding-left: 32px;
-        padding-bottom: 40px;
-        padding-right: 69px;
-    }
-
+    // .places{
+    //     padding:40px 32px;
+    // }
+    
+    
     .btn__1 {
         margin-bottom: 10px;
 
@@ -282,6 +287,12 @@
 
     .info__item{
         width: 280px;
+        margin-bottom: 20px;
+        padding:40px 32px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -310,21 +321,21 @@
     .info__item{
         padding-left: 0;
         padding-right: 0;
-        margin-bottom: 60px;
+        
         margin-right: 32px;
+        width: 100%;
+        padding:40px 32px;
     }
 
     .info__item:last-child{
         margin-right: 0;
     }
 
-    .places{
-        width: 100%;
-       padding-left: 32px;
-       padding-top: 40px;
-       padding-bottom: 40px;
+    // .places{
+    //     width: 100%;
+    //    padding:40px 32px;
        
-    }
+    // }
 
     .places__name{
         margin-bottom: 32px;
@@ -351,13 +362,13 @@
     
 
     .places__text{
-        padding-right: 33px;
+        
         font-size: 14px;
         line-height: 166%;
     }
 
-    .places__text::after{
-        right: 32px;
+    .name::after{
+        
         bottom: -32px;
     }
 
@@ -386,8 +397,8 @@
 
     
     
-    .schedule__time-after::after {
-        right: 32px;
+    .days::after {
+        
         bottom: -32px;
         
     }
@@ -437,9 +448,15 @@
 
 }
 
-    .places {
-        width: 100%;
+    // .places {
+    //     width: 100%;
+    //     padding: 40px;
         
+    // }
+
+    .info__item{
+        width: 100%;
+        padding: 40px;
     }
 
     .places__name{
@@ -452,8 +469,8 @@
     }
 
     .places__text {
-        padding-right: 85px;
         
+       
         font-size: 16px;
         line-height: 183%;
         
