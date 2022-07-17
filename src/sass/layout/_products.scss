@@ -125,6 +125,7 @@
 
 .modal__products-window{
     position: absolute;
+    z-index: 150;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -133,31 +134,33 @@
     justify-content: space-between;
 
 
-    height: 500px;
+    max-width: 370px;
+    height: 450px;
     padding: 40px;
     border-radius: 24px;
 
     background-image: url('../images/mobile/about/about-bg.png');
     background-repeat: no-repeat;
     background-color: $background-primary-color;
-        @media screen and (max-width: 479px) {
-                width: 100%;
-            }
-        
-            @media screen and (min-width: 480px) {
-                width: 450px;
-            }
-        
-            @media screen and (min-width: 1200px) {
-                width: 528px;
-                height: 581px;
-            }
+    
         
 }
 
 .window__text{
     @include font($fs: 20px, $lh: 23px);
    color: $accent-red-color;
+@media screen and (max-width: 479px) {
+        @include font($fs: 12px, $lh: 14px);
+    }
+
+    @media screen and (min-width: 480px) {
+        @include font($fs: 14px, $lh: 16px);
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include font($fs: 20px, $lh: 23px);
+    }
+
 
 
 }
@@ -210,6 +213,12 @@
         top: 40%;
         left: 30%;
         transform: translate(-50%, -50%);
+    }
+}
+@media screen and (min-width: 480px) {
+    .modal__products-window {
+        width: 370px;
+        height: 540px;
     }
 }
 
@@ -350,11 +359,6 @@
         .products__button {
             margin-bottom: 60px;
         }
-
-    .modal__products-window{
-        width: 370px;
-        height: 540px;
-    }
 
     .window__text{
         margin: 40px 32px;
