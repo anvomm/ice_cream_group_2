@@ -3,7 +3,7 @@
     // (rgba(229, 229, 229, 0,4), rgba(255, 245, 246, 0,4));
     background-image: linear-gradient(to bottom,
             #FFFFFF 23%,
-            #FFF5F6 23%);
+            #FFF5F6 23%);    
 
 }
   
@@ -293,6 +293,7 @@
                 #FFFfff 46%,
                 #FFF5F6 46%);
     
+    
     }
 
     .name{
@@ -417,6 +418,13 @@
     }
 
    
+}
+@media screen and (max-width: 1199px) {
+    .section-contacts {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
 }
 
 @media screen and (min-width: 1200px){
