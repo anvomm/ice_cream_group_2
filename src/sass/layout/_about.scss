@@ -130,6 +130,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 300;
 
     width: 100%;
     height: 100%;
@@ -149,7 +150,6 @@
 
 .modal__about_window {
     position: absolute;
-    z-index: 150;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
