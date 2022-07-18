@@ -1,110 +1,61 @@
 .section-contacts {
-    // background-color: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4))
-    // (rgba(229, 229, 229, 0,4), rgba(255, 245, 246, 0,4));
     background-image: linear-gradient(to bottom,
-            #FFFFFF 23%,
-            #FFF5F6 23%);    
+            $background-primary-color 23%,
+            $background-second-color 23%);    
 
 }
-  
-
-    
-    // .places{
-        
-    //     background-color:$background-primary-color;
-    //     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    //     border-radius: 24px;
-        
-        
-
-    // }
-    
-    .places__name{
+    .places__name,
+    .places__name-foodtrack {
+        @include font(500, 12px, 22px);
+        height: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         padding: 4px 25px;
         margin-bottom: 20px;
-        
+        border-radius: 4px;
+    }
+    .places__name{
         background:$background-coffee-color ;
         border-radius: 4px;
         width: 80px;
-        height: 16px;
-        
-        font-size: 12px;
-        line-height: 186%;
-        
-        
-        display: flex;
-        align-items: center;
-        text-align: center;
-        letter-spacing: 0.04em;
-        
         color: $background-primary-color;
-        
-        
+    
     }
     
     .places__name-foodtrack{
         background: $background-green-color;
         color: $background-primary-color;
-        margin-bottom: 20px;
         width: 130px;
-        height: 16px;
-        // padding: 0px 15px;
-        font-size: 12px;
-        line-height: 186%;
-        padding-left: 25px;
-        
-        
-        padding-bottom: 20px;
-        
-        
-        border-radius: 4px;
+    
     }
 
     .places__city{
         
         text-align: left;
         margin-bottom: 8px;
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 186%;
-        
-        
-        letter-spacing: 0.04em;
-        
+        @include font(500, 12px, 22px); 
         color: $secondary-text-color;
     }
 
     .places__text{
-        
-        
-        
-        
         text-align: left;
-        font-family: 'DM Sans';
-        font-style: normal;
+        @include font(500, 12px, 18px);
         font-weight: 500;
-        font-size: 12px;
-        line-height: 18px;
-        
-        
         color: $primary-text-color;
     }
 
-    .name::after{
+    .name::after,
+    .days::after{
         content: "";
         position: absolute;
         width: 100%;
         height: 0px;
         left: 0;
         bottom: -24px;
-        
-        
-        border: 1px solid #E1E1E1;
+           
+        border: 1px solid $border-color;
     }
-
-    
 
     .name{
         position: relative;
@@ -116,19 +67,6 @@
         position: relative;
     }
 
-    
-    
-
-    .days::after{
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 0px;
-        left:0;
-        bottom: -24px;
-        border: 1px solid #E1E1E1;
-    }
-
     .schedule {
         margin-bottom: 8px;
     
@@ -138,34 +76,18 @@
     }
 
     .schedule__day{
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 186%;
-        
-        
-        
+        @include font(500, 12px, 22px);
         color: $secondary-text-color;
     }
 
     .schedule__time{
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 186%;
-        
-        
-        
-        color: #FFA5BA;
+        @include font(500, 12px, 22px);
+        color: $rose-text-color;
     }
 
     .contacts-card__link{
         color: $primary-text-color;
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color 250ms linear;
 
         &:hover,
         &:focus {
@@ -173,63 +95,39 @@
         }
     }
 
-    .contacts-card__tel{
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 18px;
-        
-
-        
+    .contacts-card__tel,
+    .contacts-card__mail {
+        @include font(500, 12px, 18px);       
     }
 
-    .contacts-card__mail{
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 18px;
-        /* or 150% */
-        
-        
+    .contacts-card__mail{        
         color: $primary-text-color;
     }
 
-    .info__item{
-        
+    .info__item{ 
        margin-left: auto;
         margin-right: auto;
         background-color:$background-primary-color;
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         border-radius: 24px;
-        
-        
     }
 
-    
-
-    .modal__btn_contacts{
-        
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 21px;
-        
+    .modal__btn_contacts,
+    .modal__btn_franchise {
+        @include font(700, 16px, 21px);
         height: 44px;
         min-width: 162px;
+        border-radius: 22px;
+        transition: background-color 250ms linear;
+    }
+
+    .modal__btn_contacts {
         color: $background-primary-color;
         background-color: #D41342;
-        border-radius: 22px;
-        transition-property: background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+        
         &:hover,
         &:focus{
-            background-color:#FFA5BA;
-            
+            background-color:$rose-text-color;    
         }
     }
 
@@ -246,23 +144,9 @@
         align-items: center;
     }
 
-    
-
     .modal__btn_franchise{
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 21px;
-        
-        height: 44px;
-        min-width: 162px;
         color: $accent-red-color;
         background-color: $background-primary-color;
-        border-radius: 22px;
-        transition-property: background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover,
         &:focus {
@@ -272,11 +156,6 @@
     }
 
 @media screen and (max-width: 767px){
-    // .places{
-    //     padding:40px 32px;
-    // }
-    
-    
     .btn__1 {
         margin-bottom: 10px;
 
@@ -298,13 +177,9 @@
 
 @media screen and (min-width: 768px){
     .section-contacts {
-        // background-color: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4))
-        // (rgba(229, 229, 229, 0,4), rgba(255, 245, 246, 0,4));
         background-image: linear-gradient(to bottom,
-                #FFFfff 46%,
-                #FFF5F6 46%);
-    
-    
+                $background-primary-color 46%,
+                $background-second-color 46%);
     }
 
     .name{
@@ -314,8 +189,6 @@
     .info{
         display: flex;
         justify-content: space-around;
-        
-        
     }
 
     .info__item{
@@ -331,44 +204,27 @@
         margin-right: 0;
     }
 
-    // .places{
-    //     width: 100%;
-    //    padding:40px 32px;
-       
-    // }
-
-    .places__name{
-        margin-bottom: 32px;
-        font-size: 16px;
-        padding: 0 15px;
-        width: 73px;
-        text-align: center;
-        line-height: 186%;
-        height: 28px;
-    }
-
+    .places__name,
     .places__name-foodtrack{
         margin-bottom: 32px;
         font-size: 16px;
+        line-height: 1.86;
         height: 28px;
-        padding-left: 15px;
+        padding: 0 15px;
     }
 
     .places__city{
         margin-bottom: 12px;
-        line-height: 186%;
+        line-height: 1.86;
     }
-
-    
 
     .places__text{
         
         font-size: 14px;
-        line-height: 166%;
+        line-height: 1.66;
     }
 
     .name::after{
-        
         bottom: -32px;
     }
 
@@ -381,42 +237,31 @@
 
     .schedule__day{
         font-size: 14px;
-        line-height: 186%;
+        line-height: 1.86;
     }
 
     .schedule__time{
         font-size: 14px;
-        line-height: 186%;
+        line-height: 1.86;
     }
-
-    
 
     .days{
         margin-bottom: 64px;
     }
 
-    
-    
     .days::after {
-        
         bottom: -32px;
         
     }
 
-    .contacts-card__tel{
-        font-size: 14px;
-        line-height: 183%;
-    }
-
+    .contacts-card__tel,
     .contacts-card__mail{
         font-size: 14px;
-        line-height: 183%;
+        line-height: 1.83;
     }
 
     .btn{
-        flex-direction: row;
-        
-        
+        flex-direction: row;    
     }
 
     .btn__1{
@@ -440,19 +285,11 @@
 
 @media screen and (min-width: 1200px){
 .section-contacts {
-    // background-color: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4))
-    // (rgba(229, 229, 229, 0,4), rgba(255, 245, 246, 0,4));
     background-image: linear-gradient(to bottom,
-            #FFFFFF 19%,
-            #FFF5F6 19%);
+            $background-primary-color 19%,
+            $background-second-color 19%);
 
 }
-
-    // .places {
-    //     width: 100%;
-    //     padding: 40px;
-        
-    // }
 
     .info__item{
         width: 100%;
@@ -469,99 +306,43 @@
     }
 
     .places__text {
-        
-       
-        font-size: 16px;
-        line-height: 183%;
-        
-        
-        letter-spacing: 0.04em;
-        
+        @include font (500, 16px, 29px);
         color: $primary-text-color;
     }
 
     .schedule__day {
-        
-        font-size: 16px;
-        line-height: 186%;
-        
-        
-        letter-spacing: 0.04em;
-        
+        @include font (500, 16px, 30px);
         color: $secondary-text-color;
     }
     
     .schedule__time {
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 186%;
-        
-        
-        
-        color: #FFA5BA;
+        @include font (500, 16px, 26px);
+        color: $rose-text-color;
     }
 
-    .contacts-card__tel {
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 183%;
-        /* or 29px */
-        
-        
-        color: $primary-text-color;
-    }
-    
+    .contacts-card__tel,
     .contacts-card__mail {
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 183%;
-        /* or 29px */
-        
-        
+        @include font (500, 16px, 29px);
         color: $primary-text-color;
     }
 
-    .modal__btn_contacts{
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 21px;
-        min-width: 198px;
+    .modal__btn_contacts,
+    .modal__btn_franchise {
+        @include font (700, 16px, 21px);
         text-align: center;
         align-content: baseline;
         display: flex;
         align-items: center;
         justify-content: center;
-        
+    }
+    .modal__btn_contacts {
+        min-width: 198px;
         color: $background-primary-color;
     }
 
     .modal__btn_franchise{
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 21px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        
         color: $accent-red-color;
-        min-width: 168px;
-        text-align: center;
-        align-content: baseline;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        
+        min-width: 168px;   
     }
 
     .btn-icon-contacts{
@@ -572,8 +353,7 @@
         color: $background-primary-color;
     }
 
-    .btn {
-        
+    .btn {    
         margin-right: 12px;
     }
 }
