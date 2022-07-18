@@ -89,7 +89,7 @@
 
 @media screen and (min-width: 1200px) {
   .advantages {
-    gap: 80px;
+    justify-content: space-between;
   }
 
   .advantages__text {

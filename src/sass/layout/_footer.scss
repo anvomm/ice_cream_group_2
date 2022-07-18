@@ -20,24 +20,18 @@
     gap: 16px;
     margin-bottom: 40px;
 }
-.slogan-block__text-1 {
-    font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.17;
-    text-transform: uppercase;
-    color: #FFA5BA;
-}
+.slogan-block__text-1,
 .slogan-block__text-2 {
     font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 1.15;
-    letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #D41443;
+}
+.slogan-block__text-1 {
+    @include font (400, 18px,21px);   
+    color: $rose-text-color;
+}
+.slogan-block__text-2 {
+    @include font (400, 34px, 39px);
+    color: $accent-red-color;
 }
 .contacts-block {
     display: flex;
@@ -46,32 +40,19 @@
     gap: 40px;    
 }
 .contacts-phone {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 186%;
+    @include font (700, 13px, 24px);
     text-align: right;
-    color: #000000;
+    color: $secondary-text-color;
 }
 .contacts-phone__number {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 186%;
-    /* or 22px */
+    @include font (700, 12px, 22px);
     text-align: right;
     color: rgba(212, 20, 67, 1)
 }
 .copyright-block__text {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 152%;
+    @include font (700, 12px, 22px, normal);
     text-align: center;
-    color: #907E82;
+    color: $primary-text-color;
     width: 135px;
 }
 .copyright-block {
@@ -79,9 +60,7 @@
     justify-content: center;
     padding-top: 16px;
     padding-bottom: 3px;
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-top-color: #E1E1E1;
+    border-top: 1px solid #E1E1E1;
     margin-left: -20px;
     margin-right: -20px;
 }
