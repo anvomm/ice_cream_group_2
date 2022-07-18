@@ -36,8 +36,10 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .header__container {
-    padding-top: 32px;
+  @media screen and (max-width: 1199px) {
+    .header__container {
+      padding-top: 32px;
+    }
   }
   .header-btn__wrap {
     display: flex;
@@ -181,12 +183,12 @@
       width: 345px;
       height: 345px;
       bottom: 75px;
-      left: 12%;
+      left: 14%;
     }
   }
   .hero__img {
     &--icecream {
-      left: 36%;
+      left: 35%;
     }
     &--milk,
     &--sootasty {
@@ -210,8 +212,10 @@
   .hero__container {
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 56px;
+    @media screen and (max-width: 1199px) {
+      padding-top: 20px;
+      padding-bottom: 56px;
+    }
     &::after {
       width: 335px;
       height: 335px;
@@ -220,21 +224,27 @@
     }
   }
   .hero__img {
-    &--icecream {
-      left: 322px;
+    @media screen and (max-width: 1199px) {
+      &--icecream {
+        left: 322px;
+      }
+      &--sootasty {
+        right: 32px;
+      }
+      &--milk {
+        bottom: 16px;
+      }
     }
     &--sootasty {
-      right: 32px;
       bottom: 0;
-    }
-    &--milk {
-      bottom: 16px;
     }
   }
   .hero__title {
-    @include font(400, 22px, 25px);
-    &--span {
-      @include font(400, 34px, 31px);
+    @media screen and (max-width: 1199px) {
+      @include font(400, 22px, 25px);
+      &--span {
+        @include font(400, 34px, 31px);
+      }
     }
   }
   .hero-pointer {
@@ -421,7 +431,7 @@
     border: none;
     &:focus .close-btn__icon,
     &:hover .close-btn__icon {
-      stroke: $hover-background-color;
+      stroke: $accent-red-color;
     }
   }
   .close-btn__icon {
