@@ -10,7 +10,7 @@
                 <source srcset="./images/tablet/about/about.png 1x, ./images/tablet/about/about@2x.png 2x" media="(min-width:768px)" />
                 <source srcset="./images/mobile/about/about.webp 1x, ./images/mobile/about/about@2x.webp 2x" media="(max-width:767px)" type="image/webp"/>
                 <source srcset="./images/mobile/about/about.png 1x, ./images/mobile/about/about@2x.png 2x" media="(max-width:767px)" />
-            <img class="about__image element-animation" src="./images/desktop/about/about.png" alt="корова и графин молока">
+            <img class="about__image element-animation" src="./images/desktop/about/about.png" alt="корова и графин молока" max-width="501">
             </picture>
             <div class="about__text--wraper">
                 <p class="about__text about__text--black">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.
@@ -42,7 +42,7 @@
             <p class="modal__about_text">Stir freezing" is the method of stirring the mixture by hand a number of times during the freezing period to achieve a
             smooth texture. Partially frozen mixtures can be stirred in an electric mixer or food processor, though it needs to be
             processed quickly and returned to the freezer in between.</p>
-            <button type="button" class="window__close-button" data-modal-about-close>close
+            <button type="button" class="window__close-button" aria-label="Open mobile menu" data-modal-about-close>close
                 <svg class="close-button__icon" width="20px" height="20px">
                     <use href="/src/images/sprite.svg#icon-ice-cream"></use>
                 </svg>

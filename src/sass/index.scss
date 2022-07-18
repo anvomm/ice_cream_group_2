@@ -5,10 +5,9 @@
 @import './utils/visually-hidden';
 @import './components/container';
 @import './components/section';
-@import './components/button';
+@import './components/scroll-up_button';
 @import './components/social_networks';
 @import './components/element-animation';
-@import './components/products_modal';
 @import './layout/header_hero';
 @import './layout/products';
 @import './layout/about';
@@ -17,5 +16,6 @@
 @import './layout/customer_reviews';
 @import './layout/contacts';
 @import './layout/footer';
-@import './layout/modal';
+@import './components/modal';
 @import './components/map';
+@import './components/products_modal';
