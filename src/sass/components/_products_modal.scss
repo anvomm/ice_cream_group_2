@@ -30,10 +30,40 @@
     padding: 40px 20px 40px 50px;
     border-radius: 24px;
 
-    background-image: url('../images/modal_bg.jpg');
+    background-image: url('../images/mobile/about/about-bg.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(/src/images/mobile/about/about-bg@2x.png);
+        }
+    
+        @media screen and(min-width:768px) {
+            background-image: url(/src/images/desktop/about/about-bg.png);
+    
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(/src/images/desktop/about/about-bg@2x.png);
+            }
+        }
+    
+        @media screen and(min-width:1200px) {
+            background-image: url(/src/images/desktop/about/about-bg.png);
+    
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(/src/images/desktop/about/about-bg@2x.png);
+            }
+        }
+    
     background-color: $background-second-color;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
 }
