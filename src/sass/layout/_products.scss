@@ -158,9 +158,7 @@
         flex-direction: row;
         gap: 16px;
     }
-    // .products__wrapper:not(:last-child){
-    //     flex-basis: calc((100% - 32px) / 3);
-    // }
+
     .products__item::before{
         margin-bottom: 32px;
         width: 224px;
@@ -221,9 +219,7 @@
         .section__title--other-marg {
             margin-bottom: 290px;
         }
-        // .products__wrapper:not(:last-child){
-        //     flex-basis: calc((100% - 64px) / 3);
-        // }
+
         .products__item::before {
             margin-bottom: 32px;
             width: 368px;
