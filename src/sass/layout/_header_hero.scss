@@ -431,7 +431,7 @@
     border: none;
     &:focus .close-btn__icon,
     &:hover .close-btn__icon {
-      stroke: $hover-background-color;
+      stroke: $accent-red-color;
     }
   }
   .close-btn__icon {
