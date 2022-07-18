@@ -36,8 +36,10 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .header__container {
-    padding-top: 32px;
+  @media screen and (max-width: 1199px) {
+    .header__container {
+      padding-top: 32px;
+    }
   }
   .header-btn__wrap {
     display: flex;
