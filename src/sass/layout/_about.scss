@@ -126,25 +126,7 @@
     color: $background-primary-color;
 }
 
-.backdrop__about {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 300;
-
-    width: 100%;
-    height: 100%;
-    background-color: rgba(195, 22, 55, 0.2);
-    transition: opacity 250ms linear, visibility 250ms linear;
-}
-
-.backdrop__about.modal-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
-
-.backdrop__about.modal-hidden .modal__about-window {
+.backdrop.modal-hidden .modal__about-window {
     transform: translate(-50%, -50%) scale(0.25);
 }
 
