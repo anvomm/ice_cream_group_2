@@ -1,10 +1,1 @@
-var swiper = new Swiper(".mySwiper", {
-        loop: true,
-        grabCursor: true,
-        longSwipes: false,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-});
- 
+var swiper=new Swiper(".mySwiper",{loop:!0,grabCursor:!0,longSwipes:!1,pagination:{el:".swiper-pagination",clickable:!0}})

@@ -258,11 +258,15 @@
     transition: background-color 250ms linear;
     &:focus,
     &:hover {
-      background-color: $hover-background-color;
+      background-color: $background-mobile-menu;
     }
   }
   .hero-pointer__icon {
     fill: $accent-red-color;
+    .hero-pointer:hover &,
+    .hero-pointer:focus & {
+      fill: $background-primary-color;
+    }
   }
   .hero-asside__text {
     color: $white-text-color;
