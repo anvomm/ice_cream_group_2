@@ -44,7 +44,7 @@
     overflow-y: scroll;
     margin-bottom: 30px;
 }
-.window__close-btn {
+.window__close-button {
     margin-left: auto;
     margin-right: auto;
     border-radius: 22px;
@@ -64,20 +64,20 @@
     transition: background-color 250ms linear;
 
 }
-.close-btn__icon {
+.close-button__icon {
     display: inline-block;
     fill: $background-primary-color;
     transition: fill 250ms linear;
 
 }
 
-.window__close-btn:hover,
-.window__close-btn:focus {
+.window__close-button:hover,
+.window__close-button:focus {
     background-color: $background-second-color;
     border: 1px solid $accent-red-color;
     color: $accent-red-color;
 
-    & .close-btn__icon {
+    & .close-button__icon {
         fill: $accent-red-color;
     }
 }
