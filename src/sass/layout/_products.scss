@@ -54,28 +54,22 @@
     margin-top: 32px;
     background-color: $white-text-color;
 
-    &::before{
+    &::before,
+    &::after {
         position: absolute;
         content: ' ';
         display: block;
         border-radius: 50%;
         width: 8px;
         height: 8px;
-        left: -12px;
 
         background-color: $white-text-color;
     }
-
+    &::before {
+        left: -12px;
+    }
     &::after{
-        position: absolute;
-            content: ' ';
-            display: block;
-            border-radius: 50%;
-            width: 8px;
-            height: 8px;
-            left: 12px;
-        
-            background-color: $white-text-color;
+        left: 12px;
     }
 }
 
@@ -90,6 +84,7 @@
     height: 40px;
     border-radius: 50%;
     line-height: 0;
+    background-color: $background-second-color;
     transition: background-color 250ms linear;
     &:hover,
     &:focus {
