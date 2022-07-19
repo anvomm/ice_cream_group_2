@@ -204,7 +204,7 @@ body {
   width: 32px;
   height: 32px;
   fill: #FEA5BB;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms linear;
 }
 .social-media__link:hover .social-media__icon, .social-media__link:focus .social-media__icon {
   fill: #D41342;

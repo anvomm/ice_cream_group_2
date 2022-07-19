@@ -102,27 +102,22 @@
 
 
 .modal__btn_about{
-    @include font (700, 16px, 21px);
-    height: 44px;
-    min-width: 170px;
     color: $accent-red-color;
     background-color: $background-primary-color;
-    border-radius: 22px;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
+    
     
     &:hover,
     &:focus {
         background-color: #ecebeb;
     
     }
+    @media screen and (max-width: 767px) {
+        padding: 11.5px 32px;
+    }
 }
 
 .btn-icon-about {
-    width: 10px;
-    height: 10px;
-    align-items: baseline;
     color: $background-primary-color;
 }
 

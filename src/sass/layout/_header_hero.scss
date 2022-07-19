@@ -48,21 +48,12 @@
     margin-right: 32px;
   }
   .header__btn {
-    display: flex;
-    align-items: baseline;
-    padding: 11.5px 37px;
-    @include font(700, 16px, 21px);
     color: $accent-red-color;
     background-color: $background-primary-color;
-    border-radius: 20px;
-    transition: background-color 250ms linear;
     &:hover,
     &:focus {
       background-color: $hover-background-color;
     }
-  }
-  .btn-icon {
-    margin-left: 12px;
   }
 }
 @media screen and (min-width: 1200px) {

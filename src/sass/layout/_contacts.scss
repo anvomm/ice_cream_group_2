@@ -112,15 +112,6 @@
         border-radius: 24px;
     }
 
-    .modal__btn_contacts,
-    .modal__btn_franchise {
-        @include font(700, 16px, 21px);
-        height: 44px;
-        min-width: 162px;
-        border-radius: 22px;
-        transition: background-color 250ms linear;
-    }
-
     .modal__btn_contacts {
         color: $background-primary-color;
         background-color: #D41342;
@@ -133,7 +124,7 @@
 
     .btn-icon-contacts{
         fill:   $background-primary-color;
-        margin-left: 8px;
+    
     }
 
     .btn{
@@ -156,6 +147,12 @@
     }
 
 @media screen and (max-width: 767px){
+    .modal__btn_contacts {
+        padding: 11.5px 13px;
+    }
+    .modal__btn_franchise {
+        padding: 11.5px 32px;
+    }
     .btn__1 {
         margin-bottom: 10px;
 
@@ -167,7 +164,7 @@
     .info__item{
         width: 280px;
         margin-bottom: 20px;
-        padding:40px 32px;
+        padding:40px 50px 40px 32px;
 
         &:last-child {
             margin-bottom: 0;
@@ -278,18 +275,17 @@
 
    
 }
-@media screen and (max-width: 1199px) {
-    .section-contacts {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .contacts-container {
         width: 768px;
         padding-left: 16px;
         padding-right: 16px;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .section-contacts {
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 
@@ -303,7 +299,7 @@
 
     .info__item{
         width: 100%;
-        padding: 40px;
+        padding: 40px 60px 40px 40px;
     }
 
     .places__name{
